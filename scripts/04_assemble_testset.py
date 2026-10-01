@@ -1,8 +1,8 @@
 """Step 4: assemble the test set file from the proposed selection and the parsed texts.
 
-Reads testset/proposed_100.csv and data/parsed/<case>.json, writes
-testset/swiss_ruling_eval_100.jsonl (one record per line) and a public
-summary testset/swiss_ruling_eval_100_summary.csv.
+Reads data/work/proposed_100.csv and data/parsed/<case>.json, writes
+testset/cases_100.jsonl (one record per line) and a readable summary
+data/work/cases_100_summary.csv.
 
 Record = v2 schema from docs/case-format-timeline.md. Fields that need the
 timeline builder and the decision-point drafter (timeline, actors,
@@ -11,7 +11,7 @@ supports the outcome task (T3) and the citation metrics.
 
 The AI-generated German summary that the index carries is deliberately NOT copied
 into the test set: it is third-party text, always German, and it states the result.
-It stays in testset/proposed_100.csv as ai_summary_de_from_index for human use only.
+It stays in data/work/proposed_100.csv as ai_summary_de_from_index for human use only.
 
 Label rule: the outcome is read from the dispositive; the index value is kept
 in outcome_index. Disagreements are listed at the end.
@@ -24,7 +24,7 @@ import re
 
 import pandas as pd
 
-from common import PARSED, TESTSET
+from common import PARSED, TESTSET, WORK
 
 DISPOSITIVE_RULES = [
     ("partial_approval", r"wird teilweise gutgeheissen|werden teilweise gutgeheissen|partiellement admis|parzialmente accolt"),
@@ -45,7 +45,7 @@ def outcome_from_dispositive(disp: str) -> str | None:
 
 
 def main() -> None:
-    sel = pd.read_csv(TESTSET / "proposed_100.csv")
+    sel = pd.read_csv(WORK / "proposed_100.csv")
     records, mismatches, summary = [], [], []
     for _, r in sel.iterrows():
         p = PARSED / (r["case_id"].replace("/", "_") + ".json")
@@ -95,11 +95,11 @@ def main() -> None:
                         "n_articles": len(rec["cited_articles_substantive"]), "n_precedents": len(d["cited_precedents"]["leading_cases"]),
                         "subject": r["subject"], "url": d["source_url"]})
 
-    out = TESTSET / "swiss_ruling_eval_100.jsonl"
+    out = TESTSET / "cases_100.jsonl"
     with out.open("w", encoding="utf-8") as f:
         for rec in records:
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
-    with (TESTSET / "swiss_ruling_eval_100_summary.csv").open("w", encoding="utf-8", newline="") as f:
+    with (WORK / "cases_100_summary.csv").open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(summary[0].keys())); w.writeheader(); w.writerows(summary)
 
     df = pd.DataFrame(summary)

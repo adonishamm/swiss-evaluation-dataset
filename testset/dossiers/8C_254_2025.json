@@ -1,0 +1,344 @@
+{
+ "case_id": "8C_254/2025",
+ "language": "it",
+ "steps": [
+  {
+   "code": "S1_claim",
+   "date": "2022-03-25",
+   "actor": "employer",
+   "act": "Il 25 marzo 2022 l'assicurato, piastrellista alle dipendenze della B.________ SA, subisce un trauma distorsivo alla caviglia sinistra e il caso è annunciato all'INSAI.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S2_inquiry",
+   "date": "2022-05-19",
+   "actor": "other",
+   "act": "L'esame di RMN del 19 maggio 2022 documenta le lesioni della caviglia sinistra; nel settembre 2023 segue un intervento artroscopico diagnostico con microfratture del talo laterale, mentre l'INSAI assume il caso e versa le prestazioni di legge fino alla chiusura.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S4_decision",
+   "date": "2024-06-24",
+   "actor": "insurer",
+   "act": "Con decisione formale l'INSAI nega la rendita (reddito da invalido fr. 67'899.- superiore al reddito da valido fr. 65'298.-) e assegna un'IMI del 5 %.",
+   "deadline_rule": "30 giorni dalla notifica per l'opposizione, art. 52 LPGA"
+  },
+  {
+   "code": "S5_objection",
+   "date": null,
+   "actor": "insured",
+   "act": "L'assicurato interpone opposizione contro la decisione del 24 giugno 2024 (data esatta non indicata nei fatti).",
+   "deadline_rule": "30 giorni dalla notifica della decisione, art. 52 cpv. 1 LPGA"
+  },
+  {
+   "code": "S4_decision",
+   "date": "2024-09-09",
+   "actor": "insurer",
+   "act": "Con decisione su opposizione l'INSAI conferma la decisione iniziale, fissando però il reddito da invalido in fr. 68'236.19 in base all'evoluzione nominale dei salari.",
+   "deadline_rule": "30 giorni dalla notifica per il ricorso cantonale, art. 56 e 60 LPGA"
+  },
+  {
+   "code": "S6_cantonal_appeal",
+   "date": null,
+   "actor": "insured",
+   "act": "L'assicurato ricorre al Tribunale delle assicurazioni del Cantone Ticino contro la decisione su opposizione (data non indicata nei fatti).",
+   "deadline_rule": "30 giorni dalla notifica della decisione su opposizione, art. 60 LPGA"
+  },
+  {
+   "code": "S6b_cantonal_judgment",
+   "date": "2025-03-24",
+   "actor": "cantonal_court",
+   "act": "Il Tribunale cantonale accoglie parzialmente il ricorso e condanna l'INSAI a riconoscere una rendita d'invalidità del 13 % dal 1° luglio 2024.",
+   "deadline_rule": "30 giorni dalla notifica per il ricorso in materia di diritto pubblico, art. 100 cpv. 1 LTF"
+  },
+  {
+   "code": "S7_federal_appeal",
+   "date": null,
+   "actor": "insurer",
+   "act": "L'INSAI presenta ricorso in materia di diritto pubblico al Tribunale federale, chiedendo l'annullamento della sentenza cantonale e la conferma della decisione su opposizione del 9 settembre 2024; l'assicurato postula la reiezione del ricorso, l'UFSP si esprime nello stesso senso e la Corte cantonale rinuncia a presentare osservazioni.",
+   "deadline_rule": "30 giorni dalla notifica della sentenza cantonale, art. 100 cpv. 1 LTF"
+  },
+  {
+   "code": "S7b_interim",
+   "date": "2026-06-23",
+   "actor": "federal_court",
+   "act": "Il Tribunale federale indice una deliberazione pubblica, che si tiene il 23 giugno 2026.",
+   "deadline_rule": null
+  }
+ ],
+ "documents": [
+  {
+   "doc_id": "D01",
+   "type": "judgment",
+   "title": "Sentenza del Tribunale cantonale delle assicurazioni",
+   "author": "Tribunale delle assicurazioni del Cantone Ticino",
+   "recipient": "A.________; INSAI, Agenzia di ____",
+   "date": "2025-03-24",
+   "reference": "Incarto n. 35.2024.____",
+   "body": "TRIBUNALE CANTONALE DELLE ASSICURAZIONI\nSezione di diritto delle assicurazioni sociali\n\nSentenza del 24 marzo 2025\n\nnella causa\nA.________, ____, ricorrente,\ncontro\nIstituto nazionale svizzero di assicurazione contro gli infortuni (INSAI), Lucerna, resistente,\nconcernente la decisione su opposizione del 9 settembre 2024.\n\nIn fatto\nIl 25 marzo 2022 l'assicurato, nato nel 1985 e piastrellista alle dipendenze della B.________ SA, ha riportato un trauma distorsivo alla caviglia sinistra. Con decisione del 24 giugno 2024, confermata su opposizione il 9 settembre 2024, l'INSAI ha negato il diritto a una rendita d'invalidità e ha assegnato un'indennità per menomazione dell'integrità del 5 %. Contro tale decisione l'assicurato è insorto con ricorso a questo Tribunale.\n\nPer questi motivi\nIl Tribunale delle assicurazioni pronuncia:\n1. Il ricorso è parzialmente accolto. L'INSAI è condannato a riconoscere all'assicurato una rendita d'invalidità del 13 % a partire dal 1° luglio 2024.\n2. Intimazione a: A.________; INSAI; Ufficio federale della sanità pubblica.\n\nVoie di diritto\nContro la presente sentenza può essere interposto ricorso in materia di diritto pubblico al Tribunale federale, 1000 Losanna 14, entro 30 giorni dalla notifica (art. 82 segg. e 100 cpv. 1 LTF).\n\nPer il Tribunale delle assicurazioni\nIl giudice: ____   La segretaria: ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6b_cantonal_judgment",
+    "use_at_steps": [
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Con sentenza del 24 marzo 2025, il Tribunale delle assicurazioni del Cantone Ticino ha parzialmente accolto il ricorso interposto dall'assicurato e condannato l'INSAI a riconoscergli una rendita d'invalidità del 13 % a partire dal 1° luglio 2024."
+   }
+  },
+  {
+   "doc_id": "D02",
+   "type": "decision",
+   "title": "Decisione formale – diniego di rendita d'invalidità",
+   "author": "INSAI, Servizio prestazioni",
+   "recipient": "C.________, ____",
+   "date": "2024-06-27",
+   "reference": "Sinistro n. 61.2022.5120-4",
+   "body": "ISTITUTO NAZIONALE SVIZZERO DI ASSICURAZIONE CONTRO GLI INFORTUNI (INSAI)\nAgenzia di ____\n\nDecisione del 27 giugno 2024\n\nAssicurato: C.________, nato il 14.02.1983, n. AVS 756.____.____.__\nDatore di lavoro: B.________ SA, U.________ (TI)\nProfessione: piastrellista\nEvento: infortunio del 11 ottobre 2021, distorsione al ginocchio destro\n\nIn fatto\nL'assicurato ha riportato un infortunio il 11 ottobre 2021. L'istituto ha corrisposto le prestazioni di legge fino alla chiusura del caso.\n\nIn diritto\nIl reddito da invalido è stato fissato in fr. 70'120.-, mentre il reddito da valido ammonta a fr. 69'400.-. Ne risulta che non sussiste un grado d'invalidità tale da fondare il diritto a una rendita. All'assicurato è assegnata un'indennità per menomazione dell'integrità del 10 %.\n\nDecide\n1. Il diritto a una rendita d'invalidità è negato.\n2. È riconosciuta un'indennità per menomazione dell'integrità del 10 %.\n\nVoie di diritto\nContro la presente decisione può essere interposta opposizione scritta e motivata presso l'INSAI entro 30 giorni dalla notifica (art. 52 LPGA).\n\nINSAI – Servizio prestazioni\n____",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T4_wrong_person",
+    "trap_note": "Decisione su un collega (C.________, nato nel 1983, altro sinistro del 2021, altri redditi) presso lo stesso datore di lavoro; data di nascita, numero di sinistro e iniziale differiscono da quelli dell'assicurato.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D03",
+   "type": "objection",
+   "title": "Opposizione alla decisione del 24 giugno 2024",
+   "author": "A.________",
+   "recipient": "INSAI, Agenzia di ____",
+   "date": "2024-07-22",
+   "reference": "Sinistro n. 61.2022.4417-8",
+   "body": "A.________\n____\n\nRaccomandata n. RA 98.00.4417 2210.9\n\nINSAI\nAgenzia di ____\n\n____, 22 luglio 2024\n\nOggetto: Opposizione alla decisione del 24 giugno 2024 – Sinistro n. 61.2022.4417-8\n\nGentili signore, egregi signori,\n\nin qualità di assicurato, nato nel 1985, già alle dipendenze della B.________ SA di U.________ (TI) come piastrellista, interpongo con la presente opposizione contro la decisione formale del 24 giugno 2024, con cui l'istituto ha negato il diritto a una rendita d'invalidità ritenendo il reddito da invalido (fr. 67'899.-) superiore al reddito da valido (fr. 65'298.-) e ha riconosciuto un'indennità per menomazione dell'integrità del 5 %.\n\nChiedo il riesame della decisione e mi riservo di completare la motivazione dopo la consultazione dell'incarto, di cui chiedo copia.\n\nAllegato: decisione del 24 giugno 2024.\n\nCon osservanza.\n\n(firmato) A.________",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S5_objection",
+    "use_at_steps": [
+     "S5_objection",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "A seguito dell'opposizione interposta da A.________, in data 9 settembre 2024 l'assicuratore ha in sostanza confermato il contenuto della sua prima decisione"
+   }
+  },
+  {
+   "doc_id": "D04",
+   "type": "statute_extract",
+   "title": "Art. 16 LPGA – Grado d'invalidità; art. 18 cpv. 1 LAINF – Rendita d'invalidità",
+   "author": "Fedlex – Raccolta sistematica del diritto federale",
+   "recipient": "Atti della causa",
+   "date": "2026-07-01",
+   "reference": "RS 830.1 / RS 832.20",
+   "body": "FEDLEX – La piattaforma di pubblicazione del diritto federale\n\nLegge federale sulla parte generale del diritto delle assicurazioni sociali (LPGA), RS 830.1\nStato: 1° luglio 2026\n\nArt. 16 Grado d'invalidità\nPer valutare il grado d'invalidità, il reddito del lavoro che l'assicurato invalido potrebbe conseguire esercitando l'attività ragionevolmente esigibile da lui dopo la cura medica e l'esecuzione di eventuali provvedimenti d'integrazione, tenuto conto di una situazione equilibrata del mercato del lavoro, è paragonato al reddito che egli avrebbe potuto conseguire se non fosse diventato invalido.\n\nLegge federale sull'assicurazione contro gli infortuni (LAINF), RS 832.20\nStato: 1° luglio 2026\n\nArt. 18 Rendita d'invalidità\n1 Se l'assicurato è invalido (art. 8 LPGA) almeno al 10 per cento a causa di un infortunio, ha diritto a una rendita d'invalidità, sempreché l'infortunio non sia avvenuto all'estero.\n\nLe presenti disposizioni sono riprodotte nel testo consolidato disponibile in linea. Per le versioni anteriori consultare la cronologia delle modifiche della raccolta sistematica.\n\nSito: www.fedlex.admin.ch",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T5_wrong_law_version",
+    "trap_note": "Testo consolidato allo stato del 1° luglio 2026, cioè successivo alle decisioni del 24 giugno e del 9 settembre 2024: non è la versione in vigore alla data rilevante; l'indizio è la data di consolidamento.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D05",
+   "type": "claim",
+   "title": "Denuncia di infortunio LAINF",
+   "author": "B.________ SA, U.________ (TI)",
+   "recipient": "INSAI, Agenzia di ____",
+   "date": "2022-03-25",
+   "reference": "Sinistro n. 61.2022.4417-8",
+   "body": "DENUNCIA DI INFORTUNIO LAINF\n\nDatore di lavoro: B.________ SA, ____, U.________ (TI)\nAssicurato: A.________, nato nel 1985\nProfessione: piastrellista\nData dell'infortunio: 25 marzo 2022\n\nDescrizione dell'evento: l'assicurato ha riportato un trauma distorsivo alla caviglia sinistra.\nParte del corpo colpita: caviglia sinistra\nTipo di lesione: distorsione\n\nL'assicurato è alle dipendenze della scrivente ditta in qualità di piastrellista ed è assicurato d'obbligo contro gli infortuni e le malattie professionali presso l'INSAI.\n\nSi trasmette la presente denuncia affinché l'istituto assuma il caso e proceda agli accertamenti di sua competenza. Per eventuali ulteriori informazioni sulla dinamica dell'evento rimaniamo a disposizione.\n\nLuogo e data: U.________, 25 marzo 2022\n\nTimbro e firma del datore di lavoro: B.________ SA – (firmato)\n\nRicevuto dall'INSAI, Agenzia di ____: timbro di entrata",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S1_claim",
+    "use_at_steps": [
+     "S2_inquiry",
+     "S4_decision",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Il 25 marzo 2022, A.________, nato nel 1985, a quel momento alle dipendenze della ditta B.________ SA di U.________ (TI) in qualità di piastrellista e, perciò, assicurato d'obbligo contro gli infortuni e le malattie professionali presso I'Istituto nazionale svizzero di assicurazione contro gli infortuni (INSAI), ha riportato un trauma distorsivo alla caviglia sinistra."
+   }
+  },
+  {
+   "doc_id": "D06",
+   "type": "appeal",
+   "title": "Ricorso in materia di diritto pubblico",
+   "author": "INSAI, Servizio giuridico, Lucerna",
+   "recipient": "Tribunale federale, 1000 Losanna 14",
+   "date": "2025-04-30",
+   "reference": "INSAI rif. 61.2022.4417-8",
+   "body": "Raccomandata\nTribunale federale\nIII Corte di diritto sociale\n1000 Losanna 14\n\nLucerna, 30 aprile 2025\n\nRicorso in materia di diritto pubblico\n\nRicorrente: Istituto nazionale svizzero di assicurazione contro gli infortuni (INSAI), Fluhmattstrasse 1, Lucerna\nControparte: A.________, ____\n\nconcernente la sentenza del 24 marzo 2025 del Tribunale delle assicurazioni del Cantone Ticino (incarto n. 35.2024.____).\n\nConclusioni\nL'INSAI chiede:\n1. di annullare la sentenza cantonale del 24 marzo 2025, con cui l'istituto è stato condannato a riconoscere all'assicurato una rendita d'invalidità del 13 % a partire dal 1° luglio 2024;\n2. di confermare la decisione su opposizione del 9 settembre 2024.\n\nIn fatto\nL'assicurato, piastrellista nato nel 1985, ha subito il 25 marzo 2022 un trauma distorsivo alla caviglia sinistra. Con decisione del 24 giugno 2024, confermata su opposizione il 9 settembre 2024, l'istituto ha negato la rendita e assegnato un'IMI del 5 %. Il reddito da invalido è stato fissato in fr. 68'236.19, quello da valido in fr. 65'298.-.\n\nLa sentenza impugnata è stata notificata nel termine di ricorso di 30 giorni (art. 100 cpv. 1 LTF). I motivi sono sviluppati nella parte in diritto.\n\nCon osservanza.\nINSAI – Servizio giuridico\n(firmato)",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S7_federal_appeal",
+    "use_at_steps": [
+     "S7_federal_appeal",
+     "S7b_interim"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "L'INSAI presenta un ricorso in materia di diritto pubblico al Tribunale federale, chiedendo l'annullamento della sentenza cantonale e la conferma della decisione su opposizione del 9 settembre 2024."
+   }
+  },
+  {
+   "doc_id": "D07",
+   "type": "objection",
+   "title": "Opposizione alla decisione del 24 giugno 2024",
+   "author": "A.________",
+   "recipient": "INSAI, Agenzia di ____",
+   "date": "2024-07-10",
+   "reference": "Sinistro n. 61.2022.4417-8",
+   "body": "A.________\n____\n\nINSAI\nAgenzia di ____\n\n____, 10 luglio 2024\n\nOggetto: Opposizione alla decisione del 24 giugno 2024 – Sinistro n. 61.2022.4417-8\n\nGentili signore, egregi signori,\n\nin qualità di assicurato, nato nel 1985, già alle dipendenze della B.________ SA di U.________ (TI) come piastrellista, interpongo opposizione contro la decisione formale del 24 giugno 2024, con cui l'istituto ha negato il diritto a una rendita d'invalidità ritenendo il reddito da invalido (fr. 67'899.-) superiore al reddito da valido (fr. 65'298.-) e ha riconosciuto un'indennità per menomazione dell'integrità del 5 %.\n\nChiedo che la decisione sia riesaminata e che mi venga trasmesso l'incarto completo. Mi riservo di integrare la motivazione.\n\nAllegato: decisione del 24 giugno 2024.\n\nCon osservanza.\n\nA.________\n\n(firma)",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S5_objection",
+    "use_at_steps": [],
+    "trap_type": "T3_unsent",
+    "trap_note": "Opposizione mai inviata: la firma è solo un segnaposto, manca il numero di raccomandata e il timbro di ricevimento, e la data (10 luglio) non coincide con l'opposizione effettivamente depositata il 22 luglio 2024.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D08",
+   "type": "decision",
+   "title": "Decisione formale – diniego di rendita d'invalidità e assegnazione di IMI",
+   "author": "INSAI, Servizio prestazioni",
+   "recipient": "A.________, ____",
+   "date": "2024-06-24",
+   "reference": "Sinistro n. 61.2022.4417-8",
+   "body": "ISTITUTO NAZIONALE SVIZZERO DI ASSICURAZIONE CONTRO GLI INFORTUNI (INSAI)\nAgenzia di ____\n\nDecisione del 24 giugno 2024\n\nAssicurato: A.________, nato nel 1985, n. AVS 756.____.____.__\nDatore di lavoro: B.________ SA, U.________ (TI)\nProfessione: piastrellista\nEvento: infortunio del 25 marzo 2022, trauma distorsivo alla caviglia sinistra\n\nIn fatto\nL'istituto ha assunto il caso e ha corrisposto regolarmente le prestazioni di legge. Dopo l'intervento artroscopico diagnostico con microfratture del talo laterale del settembre 2023 il caso è giunto a chiusura.\n\nIn diritto\nIl reddito da invalido è fissato in fr. 67'899.-, il reddito da valido in fr. 65'298.-. Il primo risulta superiore al secondo; ne consegue che il diritto a una rendita d'invalidità è negato. All'assicurato è assegnata un'indennità per menomazione dell'integrità (IMI) del 5 %.\n\nDecide\n1. Il diritto a una rendita d'invalidità è negato.\n2. È assegnata un'IMI del 5 %.\n\nVoie di diritto\nContro la presente decisione può essere interposta opposizione scritta e motivata presso l'INSAI entro 30 giorni dalla notifica (art. 52 LPGA).\n\nINSAI – Servizio prestazioni\n____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S5_objection",
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Alla chiusura del caso, con decisione formale del 24 giugno 2024 l'amministrazione ha negato il diritto a una rendita in quanto il reddito da invalido (fr. 67'899.-) è risultato superiore a quello da valido (fr. 65'298.-)."
+   }
+  },
+  {
+   "doc_id": "D09",
+   "type": "letter",
+   "title": "Osservazioni dell'Ufficio federale della sanità pubblica",
+   "author": "Ufficio federale della sanità pubblica (UFSP), Divisione Assicurazione contro gli infortuni",
+   "recipient": "Tribunale federale, III Corte di diritto sociale",
+   "date": "2025-11-14",
+   "reference": "Procedura 8C_254/2025",
+   "body": "UFFICIO FEDERALE DELLA SANITÀ PUBBLICA (UFSP)\nDivisione Assicurazione contro gli infortuni\n3003 Berna\n\nBerna, 14 novembre 2025\n\nTribunale federale\nIII Corte di diritto sociale\n1000 Losanna 14\n\nProcedura 8C_254/2025 – INSAI contro A.________\nOsservazioni al ricorso in materia di diritto pubblico\n\nSignora Presidente, signori giudici,\n\nin risposta all'invito del Tribunale federale a presentare osservazioni nella causa in oggetto, concernente la sentenza del 24 marzo 2025 del Tribunale delle assicurazioni del Cantone Ticino, lo scrivente Ufficio si esprime come segue.\n\nL'UFSP si associa alla richiesta dell'assicurato e propone la reiezione del ricorso presentato dall'INSAI. Le argomentazioni a sostegno di tale posizione sono esposte nella parte seguente del presente scritto.\n\nL'Ufficio resta a disposizione del Tribunale per ogni ulteriore chiarimento.\n\nCon osservanza.\n\nUFFICIO FEDERALE DELLA SANITÀ PUBBLICA\nDivisione Assicurazione contro gli infortuni\n(firmato) ____",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S7_federal_appeal",
+    "use_at_steps": [],
+    "trap_type": "T1_future",
+    "trap_note": "Scritto datato 14 novembre 2025, posteriore alla sentenza cantonale del 24 marzo 2025 e alla fase cantonale: se collocato prima della sentenza cantonale (o prima del ricorso federale) è un documento dal futuro; l'indizio è la data e il numero di procedura federale 8C_254/2025 non ancora attribuito.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D10",
+   "type": "medical_report",
+   "title": "Referto di risonanza magnetica nucleare (RMN) della caviglia sinistra",
+   "author": "Servizio di radiologia, ____",
+   "recipient": "Medico curante di A.________",
+   "date": "2022-05-19",
+   "reference": "Esame RMN n. ____",
+   "body": "SERVIZIO DI RADIOLOGIA\n____\n\nReferto RMN – caviglia sinistra\nData dell'esame: 19 maggio 2022\nPaziente: A.________, nato nel 1985\nIndicazione: trauma distorsivo alla caviglia sinistra del 25 marzo 2022\n\nReperti\n- Lesione della sindesmosi tibio-fibulare anteriore.\n- Distrazione del legamento deltoideo.\n- Edema osseo dell'astragalo e, in misura minore, della tibia.\n- Piccolo danno osteocondrale del domo astragalico.\n\nIl presente referto descrive i reperti di imaging. La valutazione clinica e la scelta del trattamento spettano al medico curante.\n\nDistinti saluti.\n\nDott. ____\nMedico radiologo\n(firmato)",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S2_inquiry",
+    "use_at_steps": [
+     "S4_decision",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "L'esame di RMN del 19 maggio 2022 ha evidenziato la presenza di una lesione della sindesmosi tibio-fibulare anteriore e distrazione del legamento deltoideo, come pure un edema osseo dell'astragalo e in misura minore della tibia con piccolo danno osteocondrale del domo astragalico."
+   }
+  },
+  {
+   "doc_id": "D11",
+   "type": "decision",
+   "title": "Decisione su opposizione",
+   "author": "INSAI, Servizio giuridico",
+   "recipient": "A.________, ____",
+   "date": "2024-09-09",
+   "reference": "Sinistro n. 61.2022.4417-8",
+   "body": "ISTITUTO NAZIONALE SVIZZERO DI ASSICURAZIONE CONTRO GLI INFORTUNI (INSAI)\nServizio giuridico\n\nDecisione su opposizione del 9 settembre 2024\n\nAssicurato: A.________, nato nel 1985, n. AVS 756.____.____.__\nDatore di lavoro: B.________ SA, U.________ (TI)\nEvento: infortunio del 25 marzo 2022\n\nIn fatto\nCon decisione formale del 24 giugno 2024 l'istituto ha negato il diritto a una rendita d'invalidità e ha assegnato un'IMI del 5 %. Contro tale decisione l'assicurato ha interposto opposizione il 22 luglio 2024.\n\nIn diritto\nL'istituto conferma in sostanza il contenuto della prima decisione. Facendo capo agli ultimi dati a disposizione relativi all'evoluzione nominale dei salari, il reddito da invalido è tuttavia fissato in fr. 68'236.19. Il reddito da valido resta di fr. 65'298.-. Il reddito da invalido risulta superiore a quello da valido: il diritto a una rendita è negato. L'IMI del 5 % è confermata.\n\nDecide\nL'opposizione è respinta nel senso dei considerandi; la decisione del 24 giugno 2024 è confermata, con la correzione del reddito da invalido.\n\nVoie di diritto\nContro la presente decisione può essere interposto ricorso al Tribunale delle assicurazioni del Cantone Ticino entro 30 giorni dalla notifica (art. 56 e 60 LPGA).\n\nINSAI – Servizio giuridico\n____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S6_cantonal_appeal",
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "A seguito dell'opposizione interposta da A.________, in data 9 settembre 2024 l'assicuratore ha in sostanza confermato il contenuto della sua prima decisione, fissando tuttavia il reddito da invalido in fr. 68'236.19 facendo capo agli ultimi dati a disposizione relativi all'evoluzione nominale dei salari."
+   }
+  },
+  {
+   "doc_id": "D12",
+   "type": "inquiry_report",
+   "title": "Calcolo del grado d'invalidità – nota interna al dossier",
+   "author": "INSAI, Servizio prestazioni",
+   "recipient": "Incarto A.________",
+   "date": "2024-05-15",
+   "reference": "Sinistro n. 61.2022.4417-8",
+   "body": "INSAI – Servizio prestazioni\nAgenzia di ____\n\nNota al dossier del 15 maggio 2024\n\nAssicurato: A.________, nato nel 1985\nDatore di lavoro: B.________ SA, U.________ (TI)\nEvento: infortunio del 25 marzo 2022, trauma distorsivo alla caviglia sinistra\n\nStato del caso\nIl caso è stato assunto dall'istituto. L'assicurato è stato sottoposto nel settembre 2023 a un intervento artroscopico diagnostico con microfratture del talo laterale. Le prestazioni di legge sono state versate regolarmente.\n\nCalcolo preliminare\nReddito da valido: fr. 65'298.-\nReddito da invalido: fr. 66'950.-\nIl reddito da invalido risulta superiore al reddito da valido. Indennità per menomazione dell'integrità: 5 %.\n\nProssimi passi\nIl caso sarà sottoposto al Servizio prestazioni per la decisione formale. I redditi indicati dovranno essere verificati in base ai dati salariali più recenti.\n\nRedatto da: ____, collaboratore Servizio prestazioni\nVisto: ____",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T2_superseded",
+    "trap_note": "Calcolo preliminare anteriore alla decisione del 24 giugno 2024: il reddito da invalido (fr. 66'950.-) differisce da quelli poi fissati (fr. 67'899.- e fr. 68'236.19) e la nota stessa rinvia a una verifica successiva.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D13",
+   "type": "appeal",
+   "title": "Ricorso al Tribunale delle assicurazioni del Cantone Ticino",
+   "author": "A.________",
+   "recipient": "Tribunale delle assicurazioni del Cantone Ticino",
+   "date": "2024-10-07",
+   "reference": "Sinistro n. 61.2022.4417-8",
+   "body": "Raccomandata n. RA 98.00.5318 7741.2\n\nTribunale delle assicurazioni del Cantone Ticino\n____\n\n____, 7 ottobre 2024\n\nRicorso\n\nricorrente: A.________, nato nel 1985, ____\ncontro\nla decisione su opposizione del 9 settembre 2024 dell'Istituto nazionale svizzero di assicurazione contro gli infortuni (INSAI)\n\nConclusioni\nChiedo che la decisione su opposizione del 9 settembre 2024 sia riformata e che mi sia riconosciuto il diritto a una rendita d'invalidità.\n\nIn fatto\nIl 25 marzo 2022, mentre ero alle dipendenze della B.________ SA di U.________ (TI) in qualità di piastrellista, ho riportato un trauma distorsivo alla caviglia sinistra. Nel settembre 2023 sono stato sottoposto a un intervento artroscopico diagnostico con microfratture del talo laterale. Con decisione su opposizione l'INSAI ha confermato il diniego della rendita, fissando il reddito da invalido in fr. 68'236.19 e quello da valido in fr. 65'298.-, e l'IMI nella misura del 5 %.\n\nContesto l'esito del confronto dei redditi operato dall'istituto. Il ricorso è presentato entro il termine di 30 giorni (art. 60 LPGA).\n\nCon osservanza.\n\n(firmato) A.________\n\nAllegato: decisione su opposizione del 9 settembre 2024.",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "B. Con sentenza del 24 marzo 2025, il Tribunale delle assicurazioni del Cantone Ticino ha parzialmente accolto il ricorso interposto dall'assicurato"
+   }
+  }
+ ],
+ "absent_document": {
+  "type": "medical_report",
+  "description": "Rapporto di esame medico finale (medico di circondario INSAI o perizia indipendente) sulla capacità lavorativa residua dell'assicurato e sulle attività esigibili dopo l'intervento al talo.",
+  "why_decisive": "I fatti non menzionano alcuna valutazione medica della capacità lavorativa residua, ma il reddito da invalido e il confronto dei redditi, quindi il diritto alla rendita, dipendono interamente da essa.",
+  "needed_at_step": "S6_cantonal_appeal"
+ },
+ "_generation": {
+  "model": "sonnet",
+  "seconds": 114.5,
+  "cost_usd": 0.2305034,
+  "session_id": "418d1eb6-4735-4314-9e92-c65cccf7cf1e"
+ },
+ "_check": []
+}

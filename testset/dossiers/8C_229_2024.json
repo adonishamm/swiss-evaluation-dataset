@@ -1,0 +1,344 @@
+{
+ "case_id": "8C_229/2024",
+ "language": "fr",
+ "steps": [
+  {
+   "code": "S1_claim",
+   "date": "2022-02-28",
+   "actor": "insured",
+   "act": "A.________, par l'intermédiaire de ses parents, dépose deux demandes de prestations AI pour adultes: allocation pour impotent, et mesures professionnelles avec rente.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S2_inquiry",
+   "date": "2023-08-23",
+   "actor": "iv_office",
+   "act": "Un rapport d'enquête à domicile constate que l'assuré est autonome dans les actes ordinaires de la vie mais a besoin d'un accompagnement de 2h50 par semaine pour faire face aux nécessités de la vie.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S4_decision",
+   "date": "2023-10-26",
+   "actor": "iv_office",
+   "act": "Dans la révision d'office, l'office AI supprime le droit à l'allocation pour impotent dès le 1er janvier 2024. Il qualifie le TSA d'atteinte à la santé psychique et note que l'assuré n'a pas droit à une rente.",
+   "deadline_rule": "30 jours dès la notification, art. 60 LPGA"
+  },
+  {
+   "code": "S6_cantonal_appeal",
+   "date": null,
+   "actor": "insured",
+   "act": "A.________ recourt à la Cour des assurances sociales du Tribunal cantonal du canton de Vaud contre la décision du 26 octobre 2023.",
+   "deadline_rule": "30 jours dès la notification, art. 60 LPGA"
+  },
+  {
+   "code": "S6b_cantonal_judgment",
+   "date": null,
+   "actor": "cantonal_court",
+   "act": "La Cour des assurances sociales admet le recours et réforme la décision: A.________ a droit à une allocation pour impotent de degré faible dès le 1er janvier 2024.",
+   "deadline_rule": "30 jours dès la notification, art. 100 LTF"
+  },
+  {
+   "code": "S7_federal_appeal",
+   "date": null,
+   "actor": "federal_office",
+   "act": "L'OFAS interjette un recours en matière de droit public. Il conclut à l'annulation de l'arrêt cantonal et à la confirmation de la décision du 26 octobre 2023, et demande préalablement l'effet suspensif.",
+   "deadline_rule": "30 jours dès la notification, art. 100 LTF"
+  },
+  {
+   "code": "S7b_interim",
+   "date": "2024-08-28",
+   "actor": "federal_court",
+   "act": "Le Tribunal fédéral admet par ordonnance la requête d'effet suspensif. A.________ conclut au rejet du recours et demande l'assistance judiciaire limitée aux frais de justice.",
+   "deadline_rule": null
+  }
+ ],
+ "documents": [
+  {
+   "doc_id": "D01",
+   "type": "judgment",
+   "title": "Arrêt de la Cour des assurances sociales",
+   "author": "Cour des assurances sociales du Tribunal cantonal du canton de Vaud",
+   "recipient": "A.________; Office de l'assurance-invalidité du canton de Vaud",
+   "date": "2024-06-24",
+   "reference": "AI ____/2023",
+   "body": "Tribunal cantonal – Cour des assurances sociales. Arrêt du 24 juin 2024. Parties: A.________, recourant, contre Office de l'assurance-invalidité du canton de Vaud, intimé. Objet: allocation pour impotent (art. ____ LAI). En fait: A.________, né le 20 décembre 2005, est au bénéfice d'une infirmité congénitale selon le chiffre 405 OIC (trouble du spectre de l'autisme). Par décision du 26 octobre 2023, l'office AI a supprimé le droit à l'allocation pour impotent dès le 1er janvier 2024, dans le cadre de la révision d'office. Cette décision qualifiait le TSA d'atteinte à la santé psychique. A.________ a recouru contre cette décision. Par ces motifs, la Cour des assurances sociales prononce: I. Le recours est admis. II. La décision rendue le 26 octobre 2023 par l'Office de l'assurance-invalidité du canton de Vaud est réformée en ce sens que A.________ a droit à une allocation pour impotent de degré faible à compter du 1er janvier 2024. Voies de droit: le présent arrêt peut faire l'objet d'un recours en matière de droit public au Tribunal fédéral, Avenue du Tribunal-Fédéral 29, Lucerne, dans un délai de 30 jours dès sa notification (art. 82 ss et 100 LTF). Le président: ____. Le greffier: ____. Envoi recommandé N° 98.____.",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6b_cantonal_judgment",
+    "use_at_steps": [
+     "S7_federal_appeal",
+     "S7b_interim"
+    ],
+    "trap_type": null,
+    "trap_note": "Real document; its date is not given in the facts and was reconstructed within the procedural window.",
+    "source_sentence": "Saisi d'un recours, la Cour des assurances sociales du Tribunal cantonal du canton de Vaud l'a admis et a réformé la décision du 26 octobre 2023 en ce sens que A.________ a droit à une allocation pour impotent de degré faible à compter du 1er janvier 2024."
+   }
+  },
+  {
+   "doc_id": "D02",
+   "type": "appeal",
+   "title": "Recours contre la décision du 26 octobre 2023",
+   "author": "A.________, par ses parents B.________ et C.________",
+   "recipient": "Cour des assurances sociales du Tribunal cantonal du canton de Vaud",
+   "date": "2023-11-17",
+   "reference": "AI ____/2023",
+   "body": "Cour des assurances sociales du Tribunal cantonal, ____, Vaud. Recours de A.________, né le 20 décembre 2005, représenté par ses parents, contre la décision de l'Office de l'assurance-invalidité du canton de Vaud du 26 octobre 2023. Mesdames et Messieurs les Juges, Nous recourons contre la décision précitée, qui supprime le droit de notre fils à l'allocation pour impotent dès le 1er janvier 2024. Conclusions: 1. Le recours est admis. 2. La décision du 26 octobre 2023 est annulée. 3. A.________ a droit à une allocation pour impotent de degré moyen dès le 1er janvier 2024. Notre fils a été reconnu atteint d'une infirmité congénitale selon le chiffre 405 OIC et a perçu une allocation pour impotent de degré moyen dès le 1er mars 2012. Le rapport d'enquête à domicile du 23 août 2023 retient un besoin d'accompagnement de 2h50 par semaine pour faire face aux nécessités de la vie. Nous requérons en outre le bénéfice de l'assistance judiciaire limitée aux frais de justice. Veuillez agréer, Mesdames et Messieurs les Juges, l'expression de notre haute considération. Annexes: décision attaquée; rapport d'enquête. B.________ et C.________, parents de A.________.",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": "T3_unsent",
+    "trap_note": "The signature block carries no signature, there is no registered-mail number, receipt stamp or court acknowledgement, and it claims degré moyen whereas the filed appeal led to degré faible.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D03",
+   "type": "inquiry_report",
+   "title": "Rapport d'enquête à domicile",
+   "author": "Enquêtrice AI, Office de l'assurance-invalidité du canton de Vaud",
+   "recipient": "Dossier AI de A.________",
+   "date": "2023-08-23",
+   "reference": "AI 756.____ / EAD-2023",
+   "body": "Office de l'assurance-invalidité du canton de Vaud – Service des prestations. Rapport d'enquête à domicile du 23 août 2023. Assuré: A.________, né le 20 décembre 2005. Représentants légaux: B.________ et C.________. Motif de l'enquête: demande d'allocation pour impotent déposée le 28 février 2022. Antécédents: l'assuré présente un trouble du spectre de l'autisme (infirmité congénitale ch. 405 OIC). Il a perçu une allocation pour impotent de degré faible dès le 1er juin 2011, puis moyen dès le 1er mars 2012. Constatations: à la date de l'enquête, A.________ est désormais autonome dans les actes ordinaires de la vie. Il a néanmoins besoin d'un accompagnement pour faire face aux nécessités de la vie. Le temps nécessaire à cet accompagnement est évalué à 2h50 par semaine. Formation: A.________ a intégré le Centre de formation TEM de U.________ au terme de sa scolarité obligatoire, puis a bénéficié d'une orientation professionnelle de trois mois auprès de D.________. Le présent rapport est transmis au service compétent de l'office AI pour suite utile. Lieu et date: ____, le 23 août 2023. L'enquêtrice: ____ (signature).",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S2_inquiry",
+    "use_at_steps": [
+     "S4_decision",
+     "S6_cantonal_appeal",
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "Real document.",
+    "source_sentence": "Selon un rapport d'enquête à domicile du 23 août 2023, A.________ était désormais autonome dans les actes ordinaires de la vie, mais avait néanmoins besoin d'un accompagnement pour faire face aux nécessités de la vie (2h50 par semaine)."
+   }
+  },
+  {
+   "doc_id": "D04",
+   "type": "statute_extract",
+   "title": "Art. 38 RAI – Accompagnement pour faire face aux nécessités de la vie",
+   "author": "Recueil systématique du droit fédéral (extrait consolidé)",
+   "recipient": "Dossier AI de A.________",
+   "date": "2025-01-15",
+   "reference": "RS 831.201",
+   "body": "Règlement sur l'assurance-invalidité (RAI) du 17 janvier 1961 – Extrait, état au 1er janvier 2025. Art. 38 Accompagnement pour faire face aux nécessités de la vie. 1 Il y a besoin d'un accompagnement durable pour faire face aux nécessités de la vie lorsque, même si elle vit de manière indépendante, la personne assurée n'est pas en mesure de gérer seule son quotidien et dépend de l'aide régulière de tiers. 2 L'accompagnement est pris en considération s'il est nécessaire pour permettre à la personne assurée de vivre de manière indépendante, d'éviter son isolement durable ou de se rendre à des activités extérieures au domicile. 3 Lorsque l'atteinte à la santé est d'ordre psychique, l'accompagnement ouvre le droit à l'allocation pour impotent uniquement si la personne assurée a droit à une rente ou à des mesures de réadaptation d'ordre professionnel de l'assurance-invalidité. 4 Les prestations d'accompagnement fournies dans le cadre d'une institution sont prises en compte selon les directives de l'Office fédéral des assurances sociales. Dispositions transitoires: les procédures pendantes à la date d'entrée en vigueur de la présente teneur sont traitées conformément au nouveau droit. Source: RO 2024 ____.",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S4_decision",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": "T5_wrong_law_version",
+    "trap_note": "The extract is consolidated at 1 January 2025, so it is not the wording in force on 26 October 2023, and paragraph 3 is amended (rente OR professional measures); reviewer should check the fabricated wording against the real versions.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D05",
+   "type": "decision",
+   "title": "Décision – Révision d'office du droit à l'allocation pour impotent",
+   "author": "Office de l'assurance-invalidité du canton de Vaud",
+   "recipient": "A.________, p.a. B.________ et C.________, ____",
+   "date": "2023-10-26",
+   "reference": "AI 756.____ / API-2023",
+   "body": "Office de l'assurance-invalidité du canton de Vaud. Décision du 26 octobre 2023. Assuré: A.________, né le 20 décembre 2005. Objet: révision d'office du droit à l'allocation pour impotent. Dans le cadre de la révision d'office du droit à l'allocation pour impotent, l'office AI supprime le droit à cette prestation dès le 1er janvier 2024, soit dès le premier jour suivant le dix-huitième anniversaire de l'assuré. Motifs: selon le rapport d'enquête à domicile du 23 août 2023, l'assuré est autonome dans les actes ordinaires de la vie et a besoin d'un accompagnement de 2h50 par semaine pour faire face aux nécessités de la vie. L'office AI qualifie le trouble du spectre de l'autisme d'atteinte à la santé psychique. L'accompagnement pour faire face aux nécessités de la vie n'ouvre le droit à une allocation pour impotent, pour les personnes atteintes dans leur santé psychique, qu'à la condition d'avoir également droit à une rente. Tel n'est pas le cas de l'assuré. Voies de droit: la présente décision peut faire l'objet d'un recours auprès de la Cour des assurances sociales du Tribunal cantonal du canton de Vaud, ____, dans un délai de 30 jours dès sa notification (art. 56 et 60 LPGA). Office AI Vaud, ____. Envoi recommandé N° 98.____.",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S6_cantonal_appeal",
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "Real document.",
+    "source_sentence": "Dans l'intervalle, par décision du 26 octobre 2023, l'office AI a informé l'assuré que dans le cadre de la révision d'office du droit à l'allocation pour impotent, il supprimait le droit à la prestation dès le 1er janvier 2024, soit dès le premier jour suivant le dix-huitième anniversaire, au motif que l'accompagnement pour faire face aux nécessités de la vie n'ouvrait le droit à une allocation pour impotent pour les personnes atteintes dans leur santé psychique qu'à la condition d'avoir également droit à une rente, ce qui n'était pas son cas."
+   }
+  },
+  {
+   "doc_id": "D06",
+   "type": "inquiry_report",
+   "title": "Rapport d'enquête à domicile",
+   "author": "Enquêtrice AI, Office de l'assurance-invalidité du canton de Vaud",
+   "recipient": "Dossier AI de A.________",
+   "date": "2023-06-30",
+   "reference": "AI 756.____ / EAD-2023",
+   "body": "Office de l'assurance-invalidité du canton de Vaud – Service des prestations. Rapport d'enquête à domicile du 30 juin 2023. Assuré: A.________, né le 20 décembre 2005. Représentants légaux: B.________ et C.________. Motif de l'enquête: demande d'allocation pour impotent déposée le 28 février 2022. Antécédents: l'assuré présente un trouble du spectre de l'autisme (infirmité congénitale ch. 405 OIC). Il a perçu une allocation pour impotent de degré faible dès le 1er juin 2011, puis moyen dès le 1er mars 2012. Constatations: à la date de l'enquête, A.________ est autonome dans les actes ordinaires de la vie. Il a besoin d'un accompagnement pour faire face aux nécessités de la vie. Le temps nécessaire à cet accompagnement est évalué à 4h15 par semaine. Formation: A.________ a intégré le Centre de formation TEM de U.________ au terme de sa scolarité obligatoire, puis a bénéficié d'une orientation professionnelle de trois mois auprès de D.________. Le présent rapport est transmis au service compétent de l'office AI pour suite utile. Lieu et date: ____, le 30 juin 2023. L'enquêtrice: ____ (signature).",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S2_inquiry",
+    "use_at_steps": [
+     "S2_inquiry",
+     "S4_decision"
+    ],
+    "trap_type": "T2_superseded",
+    "trap_note": "Dated 30 June 2023, earlier than the 23 August 2023 report; its 4h15 weekly figure is corrected to 2h50 in the later report and in the decision.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D07",
+   "type": "appeal",
+   "title": "Recours en matière de droit public",
+   "author": "Office fédéral des assurances sociales (OFAS)",
+   "recipient": "Tribunal fédéral, Avenue du Tribunal-Fédéral 29, 1000 Lausanne 14",
+   "date": "2024-08-12",
+   "reference": "OFAS ____ / AI-API",
+   "body": "Office fédéral des assurances sociales, Effingerstrasse 20, 3003 Berne. Recours en matière de droit public contre l'arrêt de la Cour des assurances sociales du Tribunal cantonal du canton de Vaud du 24 juin 2024 dans la cause A.________ contre Office de l'assurance-invalidité du canton de Vaud. Conclusions: 1. Le recours est admis. 2. L'arrêt cantonal est annulé et la décision de l'office AI du 26 octobre 2023 est confirmée. Requête préalable: l'OFAS demande que le recours soit assorti de l'effet suspensif. Exposé: par décision du 26 octobre 2023, l'office AI a supprimé le droit de l'assuré, né le 20 décembre 2005, à l'allocation pour impotent dès le 1er janvier 2024, dans le cadre de la révision d'office. L'office AI a retenu que l'accompagnement pour faire face aux nécessités de la vie n'ouvre le droit à l'allocation, pour les personnes atteintes dans leur santé psychique, qu'à la condition d'avoir également droit à une rente. Il a qualifié le trouble du spectre de l'autisme d'atteinte à la santé psychique. L'arrêt cantonal a admis le recours de l'assuré. Annexes: arrêt attaqué. Berne, le 12 août 2024. Pour l'Office fédéral des assurances sociales: ____ .",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S7_federal_appeal",
+    "use_at_steps": [
+     "S7_federal_appeal",
+     "S7b_interim"
+    ],
+    "trap_type": null,
+    "trap_note": "Real document; its date is not given in the facts and was reconstructed within the procedural window.",
+    "source_sentence": "L'Office fédéral des assurances sociales (OFAS) interjette un recours en matière de droit public en concluant à l'annulation de l'arrêt cantonal et à la confirmation de la décision de l'office AI du 26 octobre 2023. À titre préalable, l'OFAS demande que son recours soit assorti de l'effet suspensif."
+   }
+  },
+  {
+   "doc_id": "D08",
+   "type": "claim",
+   "title": "Demandes de prestations AI pour adultes",
+   "author": "B.________ et C.________, pour A.________",
+   "recipient": "Office de l'assurance-invalidité du canton de Vaud",
+   "date": "2022-02-28",
+   "reference": "AI 756.____ / DEM-2022",
+   "body": "Office de l'assurance-invalidité du canton de Vaud, ____. Objet: demandes de prestations AI pour adultes. Mesdames, Messieurs, Nous vous faisons parvenir, au nom de notre fils A.________, né le 20 décembre 2005, deux demandes de prestations de l'assurance-invalidité pour adultes: l'une tendant au versement d'une allocation pour impotent, l'autre à l'octroi de mesures professionnelles et de rente. Notre fils a été annoncé à l'AI le 18 octobre 2011 en raison de troubles envahissants du développement (TED; CIM-10 F84). L'office AI a admis une infirmité congénitale selon le chiffre 405 OIC (trouble du spectre de l'autisme) et a pris en charge des mesures médicales dès le 21 juillet 2011. Il a reconnu une allocation pour impotent de degré faible dès le 1er juin 2011, puis moyen dès le 1er mars 2012. Au terme de sa scolarité obligatoire, A.________ a intégré le Centre de formation TEM de U.________, puis a bénéficié d'une orientation professionnelle de trois mois auprès de D.________. Nous restons à votre disposition pour tout renseignement complémentaire. Salutations distinguées. B.________ et C.________, représentants légaux. Envoi recommandé N° 98.____.",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S1_claim",
+    "use_at_steps": [
+     "S2_inquiry",
+     "S4_decision",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "Real document.",
+    "source_sentence": "Le 28 février 2022, A.________ a déposé, par l'intermédiaire de ses parents, deux demandes de prestations AI pour adultes, l'une tendant au versement d'une allocation pour impotent, l'autre à l'octroi de mesures professionnelles et de rente."
+   }
+  },
+  {
+   "doc_id": "D09",
+   "type": "letter",
+   "title": "Courrier – Suite de la formation pratique INSOS",
+   "author": "Office de l'assurance-invalidité du canton de Vaud",
+   "recipient": "B.________ et C.________, ____",
+   "date": "2025-02-10",
+   "reference": "AI 756.____ / MP-2025",
+   "body": "Office de l'assurance-invalidité du canton de Vaud. Lausanne, le 10 février 2025. Concerne: A.________, né le 20 décembre 2005 – formation pratique INSOS, industrie légère. Madame, Monsieur, Nous faisons référence à notre communication du 4 décembre 2023, par laquelle nous avons pris en charge les coûts de la formation professionnelle initiale de votre fils du 21 novembre 2023 au 20 novembre 2025. Nous constatons que cette formation arrive à son terme dans le courant de l'année. Afin de préparer la suite du parcours professionnel de A.________, nous vous invitons à un entretien avec son conseiller en réadaptation. Nous vous prions de prendre en compte, pour cet entretien, l'évolution de la procédure relative à l'allocation pour impotent, ainsi que l'arrêt rendu par la juridiction cantonale. L'institution formatrice continue de verser les indemnités journalières sous forme de salaire jusqu'à la fin de la formation. Veuillez nous indiquer vos disponibilités par retour de courrier. Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées. Le conseiller en réadaptation: ____. Office AI Vaud, ____.",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": "T1_future",
+    "trap_note": "Dated 10 February 2025, well after the cantonal appeal stage, and refers to the cantonal judgment and procedural developments the agent has not yet seen.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D10",
+   "type": "appeal",
+   "title": "Recours contre la décision du 26 octobre 2023",
+   "author": "A.________, par ses parents B.________ et C.________",
+   "recipient": "Cour des assurances sociales du Tribunal cantonal du canton de Vaud",
+   "date": "2023-11-24",
+   "reference": "AI ____/2023",
+   "body": "Cour des assurances sociales du Tribunal cantonal, ____, Vaud. Recours de A.________, né le 20 décembre 2005, représenté par ses parents, contre la décision de l'Office de l'assurance-invalidité du canton de Vaud du 26 octobre 2023. Mesdames et Messieurs les Juges, Nous recourons contre la décision précitée, qui supprime le droit de notre fils à l'allocation pour impotent dès le 1er janvier 2024. Conclusions: 1. Le recours est admis. 2. La décision du 26 octobre 2023 est réformée en ce sens que A.________ a droit à une allocation pour impotent de degré faible dès le 1er janvier 2024. Notre fils a été reconnu atteint d'une infirmité congénitale selon le chiffre 405 OIC et a perçu une allocation pour impotent de degré faible dès le 1er juin 2011, puis moyen dès le 1er mars 2012. Le rapport d'enquête à domicile du 23 août 2023 retient un besoin d'accompagnement de 2h50 par semaine pour faire face aux nécessités de la vie. Nous requérons le bénéfice de l'assistance judiciaire limitée aux frais de justice. Veuillez agréer, Mesdames et Messieurs les Juges, l'expression de notre haute considération. Annexes: décision attaquée; rapport d'enquête. Lausanne, le 24 novembre 2023. B.________ et C.________ (signatures). Envoi recommandé N° 98.____. Reçu au greffe le 27 novembre 2023.",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "Real document; its date, grounds and receipt stamp are not given in the facts and were reconstructed within the 30-day window.",
+    "source_sentence": "Saisi d'un recours, la Cour des assurances sociales du Tribunal cantonal du canton de Vaud l'a admis et a réformé la décision du 26 octobre 2023"
+   }
+  },
+  {
+   "doc_id": "D11",
+   "type": "order",
+   "title": "Ordonnance – Effet suspensif",
+   "author": "Tribunal fédéral, Ire Cour de droit social",
+   "recipient": "Office fédéral des assurances sociales; A.________; Tribunal cantonal du canton de Vaud",
+   "date": "2024-08-28",
+   "reference": "8C_229/2024",
+   "body": "Tribunal fédéral. Ordonnance du 28 août 2024. Cause 8C_229/2024. Parties: Office fédéral des assurances sociales, recourant, contre A.________, intimé, et Office de l'assurance-invalidité du canton de Vaud. Objet: allocation pour impotent; effet suspensif. Vu le recours en matière de droit public interjeté par l'Office fédéral des assurances sociales contre l'arrêt de la Cour des assurances sociales du Tribunal cantonal du canton de Vaud du 24 juin 2024, vu la requête d'effet suspensif présentée à titre préalable par le recourant, le Tribunal fédéral ordonne: 1. La requête d'effet suspensif est admise. 2. La présente ordonnance est communiquée aux parties et au Tribunal cantonal du canton de Vaud. Lausanne, le 28 août 2024. Au nom de la Ire Cour de droit social du Tribunal fédéral. Le juge instructeur: ____. Le greffier: ____.",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S7b_interim",
+    "use_at_steps": [
+     "S7b_interim"
+    ],
+    "trap_type": null,
+    "trap_note": "Real document.",
+    "source_sentence": "Par ordonnance du 28 août 2024, le Tribunal fédéral a admis la requête d'effet suspensif."
+   }
+  },
+  {
+   "doc_id": "D12",
+   "type": "decision",
+   "title": "Décision – Révision d'office du droit à l'allocation pour impotent",
+   "author": "Office de l'assurance-invalidité du canton de Vaud",
+   "recipient": "A.________, p.a. E.________ et F.________, ____",
+   "date": "2022-11-21",
+   "reference": "AI 756.____ / API-2022",
+   "body": "Office de l'assurance-invalidité du canton de Vaud. Décision du 21 novembre 2022. Assuré: A.________, né le 20 décembre 2004, AVS 756.____.____.__. Objet: révision d'office du droit à l'allocation pour impotent. Dans le cadre de la révision d'office du droit à l'allocation pour impotent, l'office AI supprime le droit à cette prestation dès le 1er janvier 2023, soit dès le premier jour suivant le dix-huitième anniversaire de l'assuré. Motifs: l'assuré est autonome dans les actes ordinaires de la vie. Il a besoin d'un accompagnement pour faire face aux nécessités de la vie. L'office AI qualifie l'atteinte de l'assuré d'atteinte à la santé psychique. L'accompagnement n'ouvre le droit à une allocation pour impotent, pour les personnes atteintes dans leur santé psychique, qu'à la condition d'avoir également droit à une rente, ce qui n'est pas le cas. Voies de droit: la présente décision peut faire l'objet d'un recours auprès de la Cour des assurances sociales du Tribunal cantonal du canton de Vaud, ____, dans un délai de 30 jours dès sa notification (art. 56 et 60 LPGA). Office AI Vaud, ____. Envoi recommandé N° 98.____.",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S4_decision",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": "T4_wrong_person",
+    "trap_note": "Same anonymised initial and near-identical wording, but the date of birth is 20 December 2004, the parents' initials differ, and the decision is dated 21 November 2022 for another insured.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D13",
+   "type": "letter",
+   "title": "Communication – Formation professionnelle initiale",
+   "author": "Office de l'assurance-invalidité du canton de Vaud",
+   "recipient": "B.________ et C.________, ____",
+   "date": "2023-12-04",
+   "reference": "AI 756.____ / MP-2023",
+   "body": "Office de l'assurance-invalidité du canton de Vaud. Lausanne, le 4 décembre 2023. Concerne: A.________, né le 20 décembre 2005 – mesures d'ordre professionnel. Madame, Monsieur, Nous faisons suite à la demande de prestations déposée le 28 février 2022 en faveur de votre fils. Nous avons le plaisir de vous informer que l'office AI prend en charge les coûts d'une formation professionnelle initiale. Cette formation consiste en une formation pratique INSOS dans le domaine de l'industrie légère, du 21 novembre 2023 au 20 novembre 2025. L'institution formatrice versera à A.________ les indemnités journalières auxquelles il a droit sous forme de salaire. Pour toute question relative à cette mesure, nous vous prions de vous adresser à son conseiller en réadaptation, dont les coordonnées figurent en en-tête. Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées. Office AI Vaud, ____. Le conseiller en réadaptation: ____ (signature).",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S1_claim",
+    "use_at_steps": [
+     "S6_cantonal_appeal",
+     "S6b_cantonal_judgment"
+    ],
+    "trap_type": null,
+    "trap_note": "Real document, linked to the professional-measures claim; it is dated after the decision and concerns the other claim, so it is background only.",
+    "source_sentence": "Le 4 décembre 2023, l'office AI a communiqué aux parents de l'assuré qu'il prenait en charge les coûts d'une formation professionnelle initiale consistant en une formation pratique INSOS dans le domaine de l'industrie légère du 21 novembre 2023 au 20 novembre 2025, en précisant que l'institution formatrice verserait les indemnités journalières auxquelles l'assuré avait droit sous forme de salaire."
+   }
+  }
+ ],
+ "absent_document": {
+  "type": "medical_report",
+  "description": "A current medical opinion, from the SMR or a treating specialist, on the nature of A.________'s impairment as an adult (physical or psychic) and its consequences. The facts mention an SMR opinion only for the childhood congenital-infirmity recognition.",
+  "why_decisive": "The office AI qualified the TSA as a psychic impairment, and the whole refusal of the allowance rests on that qualification. No medical document in the file supports or contests it.",
+  "needed_at_step": "S4_decision"
+ },
+ "_generation": {
+  "model": "sonnet",
+  "seconds": 127.5,
+  "cost_usd": 0.2519014,
+  "session_id": "c8c33001-2628-4c34-9f31-eea39016be2b"
+ },
+ "_check": []
+}

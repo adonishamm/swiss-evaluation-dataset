@@ -1,6 +1,6 @@
 """Step 3: fetch full text from entscheidsuche.ch and split it into sections.
 
-Reads testset/proposed_100.csv by default (or testset/candidates_hard_pool.csv with --pool).
+Reads data/work/proposed_100.csv by default (or data/work/candidates_hard_pool.csv with --pool).
 For each case:
   1. resolve the entscheidsuche file name from the CH_BGer listing (cached in data/),
   2. download the HTML and JSON into data/raw/,
@@ -21,7 +21,7 @@ from datetime import date
 
 import pandas as pd
 
-from common import DATA, PARSED, RAW, TESTSET, UA, extract_citations, extract_precedents, split_sections, strip_html
+from common import DATA, PARSED, RAW, WORK, UA, extract_citations, extract_precedents, split_sections, strip_html
 
 LISTING_URL = "https://entscheidsuche.ch/docs/CH_BGer/"
 DOC_URL = "https://entscheidsuche.ch/docs/CH_BGer/{name}"
@@ -97,7 +97,7 @@ def process(row: pd.Series, table: dict) -> dict:
 
 
 def main() -> None:
-    src = TESTSET / ("candidates_hard_pool.csv" if "--pool" in sys.argv else "proposed_100.csv")
+    src = WORK / ("candidates_hard_pool.csv" if "--pool" in sys.argv else "proposed_100.csv")
     cases = pd.read_csv(src)
     table = load_listing()
     print("listing entries:", sum(len(v) for v in table.values()), "| cases to fetch:", len(cases))

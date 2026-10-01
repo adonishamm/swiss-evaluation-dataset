@@ -1,0 +1,399 @@
+{
+ "case_id": "8C_484/2025",
+ "language": "de",
+ "steps": [
+  {
+   "code": "S4_decision",
+   "date": "2019-10-24",
+   "actor": "iv_office",
+   "act": "Die IV-Stelle spricht A.________ mit Verfügungen vom 26. September und 24. Oktober 2019 rückwirkend Renten zu, sistiert die Rente während des Strafvollzugs und richtet die Kinderrenten samt Nachzahlungen an die getrennt lebende Kindsmutter aus (ebenso Verfügungen vom 15. August 2019).",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 60 ATSG"
+  },
+  {
+   "code": "S6_cantonal_appeal",
+   "date": null,
+   "actor": "insured",
+   "act": "A.________ erhebt Beschwerde beim Sozialversicherungsgericht des Kantons Zürich und beantragt die Nachzahlung der Kinderrenten vom 1. Juli 2013 bis 24. August 2017 samt Zins an sich.",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 60 ATSG"
+  },
+  {
+   "code": "S4_decision",
+   "date": "2020-01-22",
+   "actor": "iv_office",
+   "act": "Während des hängigen Beschwerdeverfahrens verfügt die IV-Stelle die Ausrichtung der Kinderrenten vom 1. Juli 2013 bis 31. August 2017 an A.________, ohne die Verfügungen der Kindsmutter B.________ zu eröffnen; ein Teil der Nachzahlungen geht an die AXA.",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 60 ATSG"
+  },
+  {
+   "code": "S6b_cantonal_judgment",
+   "date": "2020-04-30",
+   "actor": "cantonal_court",
+   "act": "Das Sozialversicherungsgericht des Kantons Zürich schreibt das Verfahren wegen Gegenstandslosigkeit ab.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S4_decision",
+   "date": "2020-05-19",
+   "actor": "iv_office",
+   "act": "Die IV-Stelle fordert von B.________ die für 1. Juli 2013 bis 31. August 2017 ausgerichteten Kinderrenten zurück (Fr. 116'878.-).",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 60 ATSG"
+  },
+  {
+   "code": "S6b_cantonal_judgment",
+   "date": "2021-05-05",
+   "actor": "cantonal_court",
+   "act": "Das Sozialversicherungsgericht heisst die Beschwerde von B.________ gut und stellt fest, die Kinderrenten seien nicht zu Unrecht bezogen worden; das Urteil wird auch A.________ eröffnet, der nicht beigeladen war, und bleibt unangefochten.",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 100 BGG"
+  },
+  {
+   "code": "S3_pre_decision",
+   "date": "2021-09-02",
+   "actor": "iv_office",
+   "act": "Die IV-Stelle kündigt A.________ die Rückforderung der Kinderrenten für 1. Juli 2013 bis 31. August 2017 an.",
+   "deadline_rule": "30 Tage für Einwand, Art. 57a IVG"
+  },
+  {
+   "code": "S4_decision",
+   "date": "2023-03-21",
+   "actor": "iv_office",
+   "act": "Die IV-Stelle hält an der Rückforderung gegenüber A.________ in Höhe von Fr. 96'617.80 fest und fordert gleichentags von der AXA Fr. 18'205.20 zurück.",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 60 ATSG"
+  },
+  {
+   "code": "S6_cantonal_appeal",
+   "date": null,
+   "actor": "insured",
+   "act": "A.________ lässt gegen die Verfügung vom 21. März 2023 Beschwerde beim Sozialversicherungsgericht erheben; die AXA wird beigeladen und lässt sich nicht vernehmen.",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 60 ATSG"
+  },
+  {
+   "code": "S6b_cantonal_judgment",
+   "date": "2025-06-30",
+   "actor": "cantonal_court",
+   "act": "Das Sozialversicherungsgericht weist die Beschwerde von A.________ ab.",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 100 BGG"
+  },
+  {
+   "code": "S7_federal_appeal",
+   "date": null,
+   "actor": "insured",
+   "act": "A.________ lässt Beschwerde in öffentlich-rechtlichen Angelegenheiten erheben und beantragt die Aufhebung des Urteils vom 30. Juni 2025 und der Verfügung vom 21. März 2023; IV-Stelle schliesst auf Abweisung, das BSV stellt keinen Antrag.",
+   "deadline_rule": "30 Tage ab Eröffnung, Art. 100 BGG"
+  }
+ ],
+ "documents": [
+  {
+   "doc_id": "D01",
+   "type": "decision",
+   "title": "Verfügung betreffend Rückforderung von Kinderrenten",
+   "author": "IV-Stelle des Kantons Zürich",
+   "recipient": "A.________",
+   "date": "2023-03-21",
+   "reference": "IV-Stelle ZH / Dossier ____ / Verf. 2023-0321",
+   "body": "IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\nEinschreiben\nA.________, ____\n\nVerfügung\nBetreff: Rückforderung von Kinderrenten für die Zeit vom 1. Juli 2013 bis 31. August 2017\n\nNach Durchführung des Vorbescheidverfahrens (Vorbescheid vom 2. September 2021) verfügt die IV-Stelle des Kantons Zürich:\n\n1. Die Kinderrenten, die für die Zeit vom 1. Juli 2013 bis 31. August 2017 ausgerichtet wurden, sind zurückzuerstatten. Die Rückforderung gegenüber A.________ beläuft sich auf Fr. 96'617.80.\n2. Die Verfügungen vom 22. Januar 2020 betreffend Kinderrenten haben die Kindsmutter B.________ nicht erreicht. Das Urteil des Sozialversicherungsgerichts des Kantons Zürich vom 5. Mai 2021 ist unangefochten geblieben.\n3. Gleichentags werden von der AXA Versicherungen AG die ausgerichteten Leistungen im Umfang von Fr. 18'205.20 zurückgefordert.\n\nRechtsmittelbelehrung: Gegen diese Verfügung kann innert 30 Tagen seit der Eröffnung beim Sozialversicherungsgericht des Kantons Zürich, ____, schriftlich Beschwerde erhoben werden (Art. 56 und 60 ATSG). Die Beschwerdeschrift hat einen Antrag und eine Begründung zu enthalten; die Beweismittel sind zu bezeichnen, soweit möglich beizulegen. Der angefochtene Entscheid ist beizulegen.\n\nIV-Stelle des Kantons Zürich\n____\nKopie an: AXA Versicherungen AG",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Verfügung vom 21. März 2023 hielt sie an der Rückforderung in der Höhe von Fr. 96'617.80 fest. Gleichentags forderte sie von der AXA die ausgerichteten Leistungen im Umfang von Fr. 18'205.20 zurück."
+   }
+  },
+  {
+   "doc_id": "D02",
+   "type": "letter",
+   "title": "Stellungnahme des Bundesamtes für Sozialversicherungen",
+   "author": "Bundesamt für Sozialversicherungen (BSV), Geschäftsfeld Invalidenversicherung",
+   "recipient": "Schweizerisches Bundesgericht, I. sozialrechtliche Abteilung, Luzern",
+   "date": "2025-10-14",
+   "reference": "BSV 318.-/2025 / BGer 8C_484/2025",
+   "body": "Bundesamt für Sozialversicherungen BSV\nEffingerstrasse 20, 3003 Bern\n\nAn das Schweizerische Bundesgericht\nI. sozialrechtliche Abteilung\n____, Luzern\n\nBeschwerdeverfahren 8C_484/2025\nA.________ gegen IV-Stelle des Kantons Zürich und AXA Versicherungen AG\n\nSehr geehrte Damen und Herren\n\nMit Schreiben vom ____ haben Sie dem Bundesamt für Sozialversicherungen Gelegenheit gegeben, sich zur Beschwerde in öffentlich-rechtlichen Angelegenheiten gegen das Urteil des Sozialversicherungsgerichts des Kantons Zürich vom 30. Juni 2025 zu äussern.\n\nDas BSV nimmt dazu wie folgt Stellung:\n\n1. Streitig ist die Rückforderung der Kinderrenten, die für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 ausgerichtet worden sind. Die IV-Stelle hat mit Verfügung vom 21. März 2023 an der Rückforderung in der Höhe von Fr. 96'617.80 festgehalten.\n2. Die Vorinstanz und die IV-Stelle haben auf eine Vernehmlassung verzichtet; die IV-Stelle hat auf Abweisung der Beschwerde geschlossen.\n3. Das BSV äussert sich zur Sache, ohne einen Antrag zu stellen. Es verweist auf die einschlägigen Weisungen zur Kinderrente und zur Rückerstattung unrechtmässig bezogener Leistungen.\n\nWir danken Ihnen für die Kenntnisnahme und verbleiben mit freundlichen Grüssen\n\nBundesamt für Sozialversicherungen\nGeschäftsfeld Invalidenversicherung\n____ (Unterschrift)\n\nKopie an: IV-Stelle des Kantons Zürich",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S7_federal_appeal",
+    "use_at_steps": [],
+    "trap_type": "T1_future",
+    "trap_note": "Die Stellungnahme des BSV ist auf 2025-10-14 datiert und gehört ins Bundesgerichtsverfahren; im Schritt S6_cantonal_appeal existiert sie noch nicht und verweist auf das kantonale Urteil vom 30. Juni 2025.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D03",
+   "type": "decision",
+   "title": "Verfügung betreffend Rückforderung von Kinderrenten",
+   "author": "IV-Stelle des Kantons Zürich",
+   "recipient": "B.________",
+   "date": "2020-05-19",
+   "reference": "IV-Stelle ZH / Dossier ____ / Verf. 2020-0519",
+   "body": "IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\nEinschreiben\nB.________, ____\n\nVerfügung\nBetreff: Rückforderung von Kinderrenten für die Zeit vom 1. Juli 2013 bis 31. August 2017\n\nDie IV-Stelle des Kantons Zürich verfügt:\n\n1. Mit Verfügungen vom 22. Januar 2020 wurde die Ausrichtung der Kinderrenten für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 an A.________ verfügt, nachdem dieser gegen die früheren Verfügungen Beschwerde erhoben hatte.\n2. Die für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 an B.________ ausgerichteten Kinderrenten werden von dieser zurückgefordert. Der Rückforderungsbetrag beläuft sich auf Fr. 116'878.-.\n3. Einer allfälligen Beschwerde gegen diese Verfügung kommt keine aufschiebende Wirkung zu, soweit nicht anders entschieden wird.\n\nRechtsmittelbelehrung: Gegen diese Verfügung kann innert 30 Tagen seit der Eröffnung beim Sozialversicherungsgericht des Kantons Zürich, ____, schriftlich Beschwerde erhoben werden (Art. 56 und 60 ATSG). Die Beschwerde muss einen Antrag und eine Begründung enthalten; die Beweismittel sind zu bezeichnen und, soweit möglich, beizulegen.\n\nIV-Stelle des Kantons Zürich\n____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Verfügung vom 19. Mai 2020 forderte die IV-Stelle die für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 an B.________ ausgerichteten Kinderrenten von dieser zurück (Fr. 116'878.-)."
+   }
+  },
+  {
+   "doc_id": "D04",
+   "type": "statute_extract",
+   "title": "Auszug aus dem Bundesgesetz über den Allgemeinen Teil des Sozialversicherungsrechts (ATSG), Art. 25",
+   "author": "Fedlex / Systematische Sammlung des Bundesrechts (SR 830.1)",
+   "recipient": "Dossier",
+   "date": "2019-01-01",
+   "reference": "SR 830.1, Art. 25 (Stand am 1. Januar 2019)",
+   "body": "Bundesgesetz über den Allgemeinen Teil des Sozialversicherungsrechts (ATSG)\nSR 830.1\nStand am 1. Januar 2019\n\nArt. 25 Rückforderung\n\n1 Unrechtmässig bezogene Leistungen sind zurückzuerstatten. Wer die Leistungen in gutem Glauben empfangen hat, muss sie nicht zurückerstatten, wenn eine grosse Härte vorliegt.\n\n2 Der Rückforderungsanspruch erlischt mit dem Ablauf eines Jahres, nachdem die Versicherungseinrichtung davon Kenntnis erhalten hat, spätestens aber mit dem Ablauf von fünf Jahren nach der Entrichtung der einzelnen Leistung. Wird der Rückforderungsanspruch aus einer Straftat abgeleitet, für die das Strafrecht eine längere Verjährungsfrist vorsieht, so ist diese Frist massgebend.\n\n3 Der Bundesrat kann bestimmen, dass auf die Rückforderung unrechtmässig bezogener Leistungen von geringem Betrag verzichtet wird.\n\nAnmerkung: Dieser Auszug gibt den Wortlaut der Bestimmung wieder, wie er im Bundesrecht am Stichtag veröffentlicht war. Massgebend ist die amtliche Veröffentlichung in der Amtlichen Sammlung des Bundesrechts (AS) und im Bundesblatt (BBl). Die Fassung wurde für das Dossier im Rahmen der Aktenführung der IV-Stelle ausgedruckt und zu den Akten genommen.\n\nQuelle: www.fedlex.admin.ch, abgerufen für die interne Dokumentation.",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T5_wrong_law_version",
+    "trap_note": "Der Auszug trägt den Stand 1. Januar 2019, also die vor der ATSG-Revision per 1. Januar 2021 geltende Fassung von Art. 25, und nicht die am Verfügungsdatum 21. März 2023 geltende Fassung; der Wortlaut ist vor Verwendung gegen die Fassung am Entscheidstichtag zu prüfen.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D05",
+   "type": "appeal",
+   "title": "Beschwerde gegen die Verfügungen vom 15. August, 26. September und 24. Oktober 2019",
+   "author": "A.________ (handelnd durch seinen Rechtsvertreter)",
+   "recipient": "Sozialversicherungsgericht des Kantons Zürich",
+   "date": "2019-11-22",
+   "reference": "SVG ZH, Beschwerde-Eingang 2019 / IV 2019/____",
+   "body": "An das Sozialversicherungsgericht des Kantons Zürich\n____strasse __, ____ Zürich\n\nEinschreiben, Nr. ____\n\nBeschwerde\n\nder A.________, ____, geboren 1970\nvertreten durch ____\n\ngegen die IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\n\nbetreffend Kinderrenten (Verfügungen vom 15. August, 26. September und 24. Oktober 2019)\n\nRechtsbegehren:\nDie Nachzahlung der Kinderrenten sei für den Zeitraum vom 1. Juli 2013 bis zum Zeitpunkt der Aufhebung des gemeinsamen Haushaltes am 24. August 2017 zuzüglich Zins an den Beschwerdeführer auszurichten.\n\nBegründung:\n1. Sachverhalt: Der Beschwerdeführer bezieht seit dem 1. Juli 2013 eine Invalidenrente. Die IV-Stelle hat die laufenden Rentenbetreffnisse und die Nachzahlungen der Kinderrenten an die seit dem 24. August 2017 von ihm getrennt lebende Mutter der drei gemeinsamen Kinder ausgerichtet; die Kinder stehen in deren alleiniger Obhut.\n2. Formelles: Die angefochtenen Verfügungen wurden dem Beschwerdeführer innert der Beschwerdefrist von 30 Tagen vor Einreichung dieser Beschwerde eröffnet. Der Beschwerdeführer ist als Adressat der Verfügungen zur Beschwerde legitimiert (Art. 59 ATSG).\n3. Die weitere Begründung bleibt der Beschwerdeergänzung vorbehalten.\n\nBeilagen: Verfügungen der IV-Stelle; Vollmacht.\n\nFreundliche Grüsse\n____ (Rechtsvertreter)\nEingang beim Gericht: Stempel ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Beschwerde beantragte A.________, die Nachzahlung der Kinderrenten sei für den Zeitraum vom 1. Juli 2013 bis zum Zeitpunkt der Aufhebung des gemeinsamen Haushaltes am 24. August 2017 zuzüglich Zins an ihn auszurichten."
+   }
+  },
+  {
+   "doc_id": "D06",
+   "type": "judgment",
+   "title": "Urteil des Sozialversicherungsgerichts des Kantons Zürich",
+   "author": "Sozialversicherungsgericht des Kantons Zürich, ____ Kammer",
+   "recipient": "A.________; IV-Stelle des Kantons Zürich; AXA Versicherungen AG",
+   "date": "2025-06-30",
+   "reference": "SVG ZH IV.2023.____",
+   "body": "Sozialversicherungsgericht des Kantons Zürich\nIV.2023.____\n\nUrteil vom 30. Juni 2025\n\nin Sachen\nA.________, Beschwerdeführer\nvertreten durch ____\n\ngegen\nIV-Stelle des Kantons Zürich, Beschwerdegegnerin\n\nund\nAXA Versicherungen AG, Beigeladene\n\nSachverhalt:\nA. Die IV-Stelle sprach A.________ mit Verfügungen vom 26. September und 24. Oktober 2019 Renten zu und richtete die Kinderrenten an die getrennt lebende Mutter der Kinder aus. Mit Verfügungen vom 22. Januar 2020 verfügte sie die Ausrichtung der Kinderrenten für die Zeit vom 1. Juli 2013 bis zum 31. August 2017 an A.________. Mit Urteil vom 5. Mai 2021 stellte das Gericht fest, die an B.________ ausgerichteten Kinderrenten seien nicht zu Unrecht bezogen worden.\nB. Mit Verfügung vom 21. März 2023 hielt die IV-Stelle an der Rückforderung in der Höhe von Fr. 96'617.80 fest. Dagegen liess A.________ Beschwerde erheben. Die zum Verfahren beigeladene AXA liess sich nicht vernehmen.\n\nDas Gericht beschliesst:\nDie Beschwerde wird abgewiesen.\n\nRechtsmittelbelehrung: Gegen dieses Urteil kann innert 30 Tagen seit der Eröffnung beim Schweizerischen Bundesgericht, ____, Luzern, Beschwerde in öffentlich-rechtlichen Angelegenheiten erhoben werden (Art. 82 ff. und 100 BGG). Die Beschwerdeschrift hat die Begehren, deren Begründung mit Angabe der Beweismittel und die Unterschrift zu enthalten.\n\nIm Namen des Gerichts\nDie Vorsitzende / Der Gerichtsschreiber: ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6b_cantonal_judgment",
+    "use_at_steps": [
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Urteil vom 30. Juni 2025 wies das Sozialversicherungsgericht die Beschwerde des A.________ ab."
+   }
+  },
+  {
+   "doc_id": "D07",
+   "type": "letter",
+   "title": "Stellungnahme der Beigeladenen zur Beschwerde",
+   "author": "AXA Versicherungen AG, Leistungen Krankentaggeld",
+   "recipient": "Sozialversicherungsgericht des Kantons Zürich",
+   "date": "2023-06-05",
+   "reference": "AXA Schaden-Nr. ____ / SVG ZH IV.2023.____",
+   "body": "AXA Versicherungen AG\nLeistungen Krankentaggeld\n____strasse __, ____ Winterthur\n\nAn das Sozialversicherungsgericht des Kantons Zürich\n____strasse __, ____ Zürich\n\nBeschwerdeverfahren A.________ gegen IV-Stelle des Kantons Zürich\nBetreff: Stellungnahme der Beigeladenen\n\nSehr geehrte Damen und Herren\n\nMit Verfügung vom ____ haben Sie die AXA Versicherungen AG zum obengenannten Beschwerdeverfahren beigeladen. Wir nehmen dazu wie folgt Stellung:\n\n1. Die AXA hat als Krankentaggeldversicherung von A.________ Vorleistungen erbracht.\n2. Die IV-Stelle hat einen Teil der Nachzahlungen der Kinderrenten für die Zeit vom 1. Juli 2013 bis 31. August 2017 an die AXA überwiesen.\n3. Mit Verfügung vom 21. März 2023 hat die IV-Stelle von der AXA die ausgerichteten Leistungen im Umfang von Fr. 18'205.20 zurückgefordert.\n4. Wir bitten das Gericht, bei seinem Entscheid die Stellung der AXA als Vorleistungserbringerin zu berücksichtigen und uns den Entscheid zuzustellen.\n\nWir danken Ihnen für die Kenntnisnahme.\n\nFreundliche Grüsse\n\nAXA Versicherungen AG\n\n_______________________          _______________________\n\nBeilagen: Verfügung der IV-Stelle vom 21. März 2023",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [],
+    "trap_type": "T3_unsent",
+    "trap_note": "Das Schreiben ist nicht unterzeichnet (leere Unterschriftsfelder), ohne Einschreibenummer und Eingangsstempel, und die Beschwerde-Akten halten fest, dass sich die beigeladene AXA nicht vernehmen liess, also nie eine Stellungnahme einging.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D08",
+   "type": "judgment",
+   "title": "Urteil des Sozialversicherungsgerichts des Kantons Zürich in Sachen B.________",
+   "author": "Sozialversicherungsgericht des Kantons Zürich, ____ Kammer",
+   "recipient": "B.________; IV-Stelle des Kantons Zürich; zur Kenntnis: A.________",
+   "date": "2021-05-05",
+   "reference": "SVG ZH IV.2020.____",
+   "body": "Sozialversicherungsgericht des Kantons Zürich\nIV.2020.____\n\nUrteil vom 5. Mai 2021\n\nin Sachen\nB.________, Beschwerdeführerin\nvertreten durch ____\n\ngegen\nIV-Stelle des Kantons Zürich, Beschwerdegegnerin\n\nSachverhalt:\nMit Verfügung vom 19. Mai 2020 forderte die IV-Stelle die für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 an B.________ ausgerichteten Kinderrenten von dieser zurück (Fr. 116'878.-). Dagegen erhob B.________ Beschwerde.\n\nDas Gericht beschliesst:\n1. Die Beschwerde wird gutgeheissen. Es wird festgestellt, dass die für den Zeitraum vom 1. Juli 2013 bis 31. August 2017 ausgerichteten Kinderrenten nicht zu Unrecht bezogen wurden und folglich nicht zurückzuerstatten sind.\n2. Das Urteil wird den Parteien sowie A.________ eröffnet.\n\nHinweis zur Eröffnung: A.________ wurde nicht zum Verfahren beigeladen; ihm wird das Urteil lediglich zur Kenntnis eröffnet.\n\nRechtsmittelbelehrung: Gegen dieses Urteil kann innert 30 Tagen seit der Eröffnung beim Schweizerischen Bundesgericht, ____, Luzern, Beschwerde in öffentlich-rechtlichen Angelegenheiten erhoben werden (Art. 82 ff. und 100 BGG). Die Beschwerdeschrift hat die Begehren, deren Begründung mit Angabe der Beweismittel und die Unterschrift zu enthalten.\n\nIm Namen des Gerichts\nDie Vorsitzende / Der Gerichtsschreiber: ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6b_cantonal_judgment",
+    "use_at_steps": [
+     "S3_pre_decision",
+     "S4_decision",
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Die von B.________ dagegen erhobene Beschwerde hiess das Sozialversicherungsgericht des Kantons Zürich mit Urteil vom 5. Mai 2021 gut. Es stellte fest, die für den Zeitraum vom 1. Juli 2013 bis 31. August 2017 ausgerichteten Kinderrenten seien nicht zu Unrecht bezogen worden und folglich nicht zurückzuerstatten. Es eröffnete das Urteil auch A.________, ohne diesen aber vorgängig zum Verfahren beigeladen zu haben."
+   }
+  },
+  {
+   "doc_id": "D09",
+   "type": "decision",
+   "title": "Verfügung betreffend Rückforderung von Kinderrenten",
+   "author": "IV-Stelle des Kantons Zürich",
+   "recipient": "A.________",
+   "date": "2023-03-21",
+   "reference": "IV-Stelle ZH / Dossier ____ / Verf. 2023-0321",
+   "body": "IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\nEinschreiben\nA.________, geboren 1968, AHV-Nr. 756.4821.7305.14\n____\n\nVerfügung\nBetreff: Rückforderung von Kinderrenten für die Zeit vom 1. Januar 2014 bis 30. Juni 2017\n\nDie IV-Stelle des Kantons Zürich verfügt:\n\n1. Die Kinderrente, die für die Zeit vom 1. Januar 2014 bis zum 30. Juni 2017 für das gemeinsame Kind ausgerichtet wurde, ist zurückzuerstatten. Die Rückforderung gegenüber A.________ beläuft sich auf Fr. 41'290.-.\n2. Die Kindsmutter wurde über das Ergebnis der Überprüfung ihrerseits informiert. Ein Urteil des Sozialversicherungsgerichts liegt in diesem Verfahren nicht vor.\n3. Die Rückforderung erfolgt, nachdem die Voraussetzungen für den Bezug der Kinderrente durch die Versicherungseinrichtung neu beurteilt wurden.\n\nRechtsmittelbelehrung: Gegen diese Verfügung kann innert 30 Tagen seit der Eröffnung beim Sozialversicherungsgericht des Kantons Zürich, ____, schriftlich Beschwerde erhoben werden (Art. 56 und 60 ATSG). Die Beschwerdeschrift hat einen Antrag und eine Begründung zu enthalten; die Beweismittel sind zu bezeichnen und, soweit möglich, beizulegen.\n\nIV-Stelle des Kantons Zürich\n____",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T4_wrong_person",
+    "trap_note": "Verfügung betrifft eine andere versicherte Person mit gleichem Namenskürzel: Geburtsjahr 1968 statt 1970, eigene AHV-Nummer, anderer Zeitraum (1.1.2014–30.6.2017) und anderer Betrag (Fr. 41'290.-).",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D10",
+   "type": "decision",
+   "title": "Verfügung betreffend Rente und Kinderrenten",
+   "author": "IV-Stelle des Kantons Zürich",
+   "recipient": "A.________",
+   "date": "2019-10-24",
+   "reference": "IV-Stelle ZH / Dossier ____ / Verf. 2019-1024",
+   "body": "IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\nEinschreiben\nA.________, ____\n\nVerfügung\nBetreff: Rentenanspruch von A.________, geboren 1970; Kinderrenten\n\nDie IV-Stelle des Kantons Zürich verfügt (in Ergänzung zur Verfügung vom 26. September 2019):\n\n1. Ab 1. Juli 2013 besteht Anspruch auf eine ganze Invalidenrente.\n2. Ab 1. November 2013 besteht Anspruch auf eine halbe Invalidenrente.\n3. Ab 1. Februar 2015 besteht wiederum Anspruch auf eine ganze Invalidenrente.\n4. Für die Zeit der IV-Taggeldzahlungen wird ein Rentenanspruch verneint.\n5. Die Rente wird vom 1. Dezember 2017 bis Ende Februar 2018 sistiert, da sich A.________ im Strafvollzug befand.\n6. Für die drei gemeinsamen Kinder werden Kinderrenten gewährt. Die laufenden Rentenbetreffnisse sowie die Nachzahlungen der Kinderrenten werden an die von A.________ seit dem 24. August 2017 getrennt lebende Mutter der Kinder ausgerichtet, die die alleinige Obhut innehat (vgl. Verfügungen vom 15. August und 26. September 2019).\n\nRechtsmittelbelehrung: Gegen diese Verfügung kann innert 30 Tagen seit der Eröffnung beim Sozialversicherungsgericht des Kantons Zürich, ____, schriftlich Beschwerde erhoben werden (Art. 56 und 60 ATSG). Die Beschwerdeschrift hat einen Antrag und eine Begründung zu enthalten; die Beweismittel sind zu bezeichnen und, soweit möglich, beizulegen.\n\nIV-Stelle des Kantons Zürich\n____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Verfügungen vom 26. September und 24. Oktober 2019 sprach die IV-Stelle des Kantons Zürich dem 1970 geborenen A.________ ab 1. Juli 2013 eine ganze, ab 1. November 2013 eine halbe und ab 1. Februar 2015 wiederum eine ganze Invalidenrente zu, wobei sie einen Rentenanspruch während der Zeit der IV-Taggeldzahlungen verneinte."
+   }
+  },
+  {
+   "doc_id": "D11",
+   "type": "appeal",
+   "title": "Beschwerde gegen die Verfügung vom 21. März 2023",
+   "author": "A.________ (handelnd durch seinen Rechtsvertreter)",
+   "recipient": "Sozialversicherungsgericht des Kantons Zürich",
+   "date": "2023-04-24",
+   "reference": "SVG ZH, Beschwerde-Eingang 2023 / IV 2023/____",
+   "body": "An das Sozialversicherungsgericht des Kantons Zürich\n____strasse __, ____ Zürich\n\nEinschreiben, Nr. ____\n\nBeschwerde\n\nder A.________, ____, geboren 1970\nvertreten durch ____\n\ngegen die IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\n\nbetreffend Rückforderung von Kinderrenten (Verfügung vom 21. März 2023)\n\nRechtsbegehren:\nDie Verfügung der IV-Stelle vom 21. März 2023 sei aufzuheben.\n\nBegründung:\n1. Sachverhalt: Mit Verfügung vom 21. März 2023 hat die IV-Stelle an der Rückforderung der für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 ausgerichteten Kinderrenten in der Höhe von Fr. 96'617.80 festgehalten. Zuvor hatte sie mit Vorbescheid vom 2. September 2021 die Rückforderung angekündigt. Das Urteil des Sozialversicherungsgerichts vom 5. Mai 2021 war dem Beschwerdeführer eröffnet worden, ohne dass er vorgängig zum Verfahren beigeladen worden war; es ist unangefochten geblieben.\n2. Formelles: Die Beschwerde richtet sich gegen eine Verfügung, die dem Beschwerdeführer eröffnet wurde, und erfolgt fristgerecht innert 30 Tagen (Art. 60 ATSG). Der Beschwerdeführer ist als Adressat der Verfügung zur Beschwerde legitimiert (Art. 59 ATSG).\n3. Die weitere Begründung wird in der Beschwerdeergänzung dargelegt.\n\nBeilagen: Verfügung vom 21. März 2023; Vollmacht.\n\nFreundliche Grüsse\n____ (Rechtsvertreter)\nEingang beim Gericht: Stempel ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "A.________ liess gegen die Verfügung vom 21. März 2023 Beschwerde beim Sozialversicherungsgericht des Kantons Zürich erheben."
+   }
+  },
+  {
+   "doc_id": "D12",
+   "type": "decision",
+   "title": "Verfügung betreffend Ausrichtung der Kinderrenten",
+   "author": "IV-Stelle des Kantons Zürich",
+   "recipient": "A.________",
+   "date": "2020-01-22",
+   "reference": "IV-Stelle ZH / Dossier ____ / Verf. 2020-0122",
+   "body": "IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\nEinschreiben\nA.________, ____\n\nVerfügung\nBetreff: Ausrichtung der Kinderrenten für die Zeit vom 1. Juli 2013 bis 31. August 2017\n\nIm hängigen Beschwerdeverfahren gegen die Verfügungen betreffend Kinderrenten kommt die IV-Stelle des Kantons Zürich auf ihre bisherigen Verfügungen zurück und verfügt:\n\n1. Dem Begehren von A.________ wird entsprochen. Die Kinderrenten werden für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 an A.________ ausgerichtet.\n2. Ein Teil der Nachzahlungen wird an die AXA Versicherungen AG überwiesen, die als Krankentaggeldversicherung Vorleistungen erbracht hat.\n3. Die Verfügungen betreffend Kinderrenten vom 15. August, 26. September und 24. Oktober 2019 werden insoweit ersetzt.\n\nRechtsmittelbelehrung: Gegen diese Verfügung kann innert 30 Tagen seit der Eröffnung beim Sozialversicherungsgericht des Kantons Zürich, ____, schriftlich Beschwerde erhoben werden (Art. 56 und 60 ATSG). Die Beschwerde hat einen Antrag und eine Begründung zu enthalten; die Beweismittel sind zu bezeichnen und, soweit möglich, beizulegen.\n\nIV-Stelle des Kantons Zürich\n____\n\nVerteiler: A.________; AXA Versicherungen AG; Sozialversicherungsgericht des Kantons Zürich",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S3_pre_decision",
+     "S4_decision",
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Während des hängigen Beschwerdeverfahrens kam die IV-Stelle auf ihre Verfügungen betreffend Kinderrente zurück und entsprach dem Begehren von A.________; sie verfügte die Ausrichtung der Kinderrenten für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 an A.________ (Verfügungen vom 22. Januar 2020), wobei sie die neuen Verfügungen der von ihm getrennt lebenden Kindsmutter B.________ nicht eröffnete."
+   }
+  },
+  {
+   "doc_id": "D13",
+   "type": "decision",
+   "title": "Verfügung betreffend Rückforderung von Kinderrenten",
+   "author": "IV-Stelle des Kantons Zürich",
+   "recipient": "A.________",
+   "date": "2023-02-14",
+   "reference": "IV-Stelle ZH / Dossier ____ / Verf. 2023-0214",
+   "body": "IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\nEinschreiben\nA.________, ____\n\nVerfügung\nBetreff: Rückforderung von Kinderrenten für die Zeit vom 1. Juli 2013 bis 31. August 2017\n\nNach Durchführung des Vorbescheidverfahrens (Vorbescheid vom 2. September 2021) verfügt die IV-Stelle des Kantons Zürich:\n\n1. Die Kinderrenten, die für die Zeit vom 1. Juli 2013 bis zum 31. August 2017 ausgerichtet wurden, sind zurückzuerstatten. Die Rückforderung gegenüber A.________ beläuft sich auf Fr. 116'878.-.\n2. Das Urteil des Sozialversicherungsgerichts des Kantons Zürich vom 5. Mai 2021 ist unangefochten geblieben.\n3. Der Anspruch der AXA Versicherungen AG wird separat geregelt.\n\nRechtsmittelbelehrung: Gegen diese Verfügung kann innert 30 Tagen seit der Eröffnung beim Sozialversicherungsgericht des Kantons Zürich, ____, schriftlich Beschwerde erhoben werden (Art. 56 und 60 ATSG). Die Beschwerdeschrift hat einen Antrag und eine Begründung zu enthalten; die Beweismittel sind zu bezeichnen und, soweit möglich, beizulegen.\n\nIV-Stelle des Kantons Zürich\n____",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T2_superseded",
+    "trap_note": "Frühere Verfügung (14. Februar 2023) mit dem Betrag Fr. 116'878.-, der der Rückforderung gegenüber B.________ entspricht; sie wird durch die Verfügung vom 21. März 2023 mit Fr. 96'617.80 ersetzt und korrigiert.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D14",
+   "type": "appeal",
+   "title": "Beschwerde in öffentlich-rechtlichen Angelegenheiten",
+   "author": "A.________ (handelnd durch seinen Rechtsvertreter)",
+   "recipient": "Schweizerisches Bundesgericht",
+   "date": "2025-08-29",
+   "reference": "BGer 8C_484/2025",
+   "body": "An das Schweizerische Bundesgericht\n____, Luzern\n\nEinschreiben, Nr. ____\n\nBeschwerde in öffentlich-rechtlichen Angelegenheiten\n\nder A.________, ____, geboren 1970\nvertreten durch ____\n\ngegen\n\ndas Urteil des Sozialversicherungsgerichts des Kantons Zürich vom 30. Juni 2025 (IV.2023.____)\nund die Verfügung der IV-Stelle des Kantons Zürich vom 21. März 2023\n\nbetreffend Rückforderung von Kinderrenten\n\nRechtsbegehren:\nEs seien das Urteil des Sozialversicherungsgerichts des Kantons Zürich vom 30. Juni 2025 und die Verfügung der IV-Stelle des Kantons Zürich vom 21. März 2023 aufzuheben.\n\nBegründung:\n1. Sachverhalt: Die IV-Stelle hat an der Rückforderung der für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 ausgerichteten Kinderrenten in der Höhe von Fr. 96'617.80 festgehalten. Das Sozialversicherungsgericht hat die dagegen erhobene Beschwerde abgewiesen. Das Urteil vom 5. Mai 2021 betreffend die Kindsmutter B.________ wurde dem Beschwerdeführer eröffnet, ohne dass er zum Verfahren beigeladen worden war.\n2. Formelles: Das angefochtene Urteil ist ein Endentscheid einer letzten kantonalen Instanz in einer Angelegenheit des öffentlichen Rechts (Art. 82 ff. BGG). Die Beschwerdefrist von 30 Tagen (Art. 100 BGG) ist gewahrt. Der Beschwerdeführer ist zur Beschwerde legitimiert (Art. 89 BGG).\n3. Die weitere Begründung wird nachstehend dargelegt.\n\nBeilagen: Urteil vom 30. Juni 2025; Verfügung vom 21. März 2023; Vollmacht.\n\nFreundliche Grüsse\n____ (Rechtsvertreter)",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S7_federal_appeal",
+    "use_at_steps": [
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Beschwerde in öffentlich-rechtlichen Angelegenheiten lässt A.________ beantragen, es seien das Urteil des Sozialversicherungsgerichts vom 30. Juni 2025 und die Verfügung der IV-Stelle vom 21. März 2023 aufzuheben."
+   }
+  },
+  {
+   "doc_id": "D15",
+   "type": "pre_decision",
+   "title": "Vorbescheid betreffend Rückforderung von Kinderrenten",
+   "author": "IV-Stelle des Kantons Zürich",
+   "recipient": "A.________",
+   "date": "2021-09-02",
+   "reference": "IV-Stelle ZH / Dossier ____ / Vorbescheid 2021-0902",
+   "body": "IV-Stelle des Kantons Zürich, ____strasse __, ____ Zürich\nA.________, ____\n\nVorbescheid\nBetreff: Rückforderung von Kinderrenten für die Zeit vom 1. Juli 2013 bis 31. August 2017\n\nSehr geehrter Herr A.________\n\nMit Urteil vom 5. Mai 2021 hat das Sozialversicherungsgericht des Kantons Zürich die Beschwerde von B.________ gegen die Rückforderungsverfügung vom 19. Mai 2020 gutgeheissen und festgestellt, dass die an B.________ für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 ausgerichteten Kinderrenten nicht zu Unrecht bezogen wurden und nicht zurückzuerstatten sind. Das Urteil wurde Ihnen eröffnet und ist unangefochten geblieben.\n\nMit Verfügungen vom 22. Januar 2020 wurden die Kinderrenten für den genannten Zeitraum an Sie ausgerichtet. Die IV-Stelle beabsichtigt daher, die ausbezahlten Kinderrenten für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 von Ihnen zurückzufordern.\n\nSie haben das Recht, innert 30 Tagen seit Zustellung dieses Vorbescheids schriftlich oder mündlich Einwände vorzubringen (Art. 57a IVG). Allfällige Einwände sind mit den Beweismitteln einzureichen. Nach Ablauf der Frist wird die IV-Stelle eine Verfügung erlassen.\n\nFreundliche Grüsse\nIV-Stelle des Kantons Zürich\n____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S3_pre_decision",
+    "use_at_steps": [
+     "S4_decision",
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Daraufhin kündigte die IV-Stelle A.________ die Rückforderung der ausbezahlten Kinderrenten für den Zeitraum vom 1. Juli 2013 bis zum 31. August 2017 an (Vorbescheid vom 2. September 2021)."
+   }
+  }
+ ],
+ "absent_document": {
+  "type": "order",
+  "description": "Beiladungsverfügung (bzw. Verfügung über die Gewährung des rechtlichen Gehörs) an A.________ im kantonalen Verfahren gegen die Rückforderungsverfügung vom 19. Mai 2020, das zum Urteil vom 5. Mai 2021 führte.",
+  "why_decisive": "Die Fakten zeigen, dass A.________ nie zum Verfahren beigeladen wurde und das Urteil vom 5. Mai 2021 nur eröffnet erhielt, sodass ohne eine Beiladung nicht belegt ist, dass er in jenem Verfahren Gehör hatte, was seine Position gegen die spätere Rückforderung am meisten beeinflusst.",
+  "needed_at_step": "S6_cantonal_appeal"
+ },
+ "_generation": {
+  "model": "sonnet",
+  "seconds": 158.4,
+  "cost_usd": 0.32678740000000006,
+  "session_id": "8466c4e5-5cba-4f8d-b499-58ba39915826"
+ },
+ "_check": []
+}

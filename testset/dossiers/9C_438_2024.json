@@ -1,0 +1,393 @@
+{
+ "case_id": "9C_438/2024",
+ "language": "fr",
+ "steps": [
+  {
+   "code": "S1_claim",
+   "date": "2021-09-21",
+   "actor": "insured",
+   "act": "A.________ demande à la caisse-maladie la prise en charge des coûts de congélation (150 fr.) et de conservation (150 fr.) de spermatozoïdes, facture du laboratoire B.________ SA du 18 août 2021 de 364 fr. 70.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S3_pre_decision",
+   "date": "2021-11-01",
+   "actor": "insurer",
+   "act": "La caisse-maladie établit un décompte de prestations refusant la prise en charge des coûts de congélation et de cryoconservation.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S4_decision",
+   "date": "2022-01-06",
+   "actor": "insurer",
+   "act": "La caisse-maladie rend une décision formelle refusant la prise en charge au titre de l'assurance obligatoire des soins.",
+   "deadline_rule": "30 jours dès la notification pour former opposition, art. 52 LPGA"
+  },
+  {
+   "code": "S5_objection",
+   "date": null,
+   "actor": "insured",
+   "act": "A.________ forme opposition à la décision du 6 janvier 2022 (date du dépôt non indiquée dans les faits).",
+   "deadline_rule": "30 jours dès la notification, art. 52 al. 1 LPGA"
+  },
+  {
+   "code": "S4_decision",
+   "date": "2022-03-30",
+   "actor": "insurer",
+   "act": "La caisse-maladie rejette l'opposition et confirme le refus, au motif que la cryoconservation n'est une prestation obligatoire que pour une thérapie liée au cancer, une transplantation de cellules souches ou un traitement au cyclophosphamide.",
+   "deadline_rule": "30 jours dès la notification pour recourir au tribunal cantonal des assurances, art. 56 et 60 LPGA"
+  },
+  {
+   "code": "S6_cantonal_appeal",
+   "date": null,
+   "actor": "insured",
+   "act": "A.________ recourt contre la décision sur opposition devant la Chambre des assurances sociales de la Cour de justice du canton de Genève (date du dépôt non indiquée dans les faits).",
+   "deadline_rule": "30 jours dès la notification, art. 60 LPGA"
+  },
+  {
+   "code": "S2_inquiry",
+   "date": "2023-03-08",
+   "actor": "federal_office",
+   "act": "La juridiction cantonale sollicite l'avis de l'Office fédéral de la santé publique, qui le rend le 8 mars 2023.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S2_inquiry",
+   "date": "2023-07-07",
+   "actor": "other",
+   "act": "La juridiction cantonale recueille un rapport du docteur C.________, médecin chef de clinique au service de gynécologie de l'Hôpital D.________, daté du 7 juillet 2023.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S6b_cantonal_judgment",
+   "date": "2024-06-21",
+   "actor": "cantonal_court",
+   "act": "La Chambre des assurances sociales admet le recours, annule la décision sur opposition du 30 mars 2022 et dit que l'assurée a droit à la prise en charge des coûts d'extraction et de cryoconservation des spermatozoïdes.",
+   "deadline_rule": "30 jours dès la notification pour le recours en matière de droit public, art. 100 al. 1 LTF"
+  },
+  {
+   "code": "S7_federal_appeal",
+   "date": null,
+   "actor": "insurer",
+   "act": "Vivao Sympany interjette un recours en matière de droit public au Tribunal fédéral et conclut principalement à la confirmation de la décision sur opposition, subsidiairement à l'annulation de l'arrêt et au renvoi de la cause (date du dépôt non indiquée dans les faits).",
+   "deadline_rule": "30 jours dès la notification de l'arrêt cantonal, art. 100 al. 1 LTF"
+  }
+ ],
+ "documents": [
+  {
+   "doc_id": "D01",
+   "type": "judgment",
+   "title": "Arrêt de la Chambre des assurances sociales",
+   "author": "Cour de justice de la République et canton de Genève, Chambre des assurances sociales",
+   "recipient": "A.________ ; Vivao Sympany AG ; Office fédéral de la santé publique",
+   "date": "2024-06-21",
+   "reference": "A/____/2022 ATAS/____/2024",
+   "body": "COUR DE JUSTICE\nRépublique et canton de Genève\nPOUVOIR JUDICIAIRE\nChambre des assurances sociales\n\nArrêt du 21 juin 2024\n\nEn la cause\nA.________, ____, recourante\ncontre\nVIVAO SYMPANY AG, ____, intimée\n\nEN FAIT\n1. A.________, née en 1999 de sexe masculin, présente une dysphorie de genre et prend des hormones dans ce cadre. Elle est assurée pour l'assurance obligatoire des soins auprès de Moove Sympany AG, devenue Vivao Sympany AG.\n2. Le 21 septembre 2021, l'assurée a requis la prise en charge des coûts de congélation (150 fr.) et de conservation (150 fr.) de spermatozoïdes. Par décompte du 1er novembre 2021, puis décision du 6 janvier 2022, confirmée sur opposition le 30 mars 2022, la caisse-maladie a refusé cette prise en charge.\n3. Le recours a été formé contre la décision sur opposition. La Cour a sollicité l'avis de l'Office fédéral de la santé publique (avis du 8 mars 2023) et un rapport du docteur C.________ (7 juillet 2023).\n\nPAR CES MOTIFS\nLa Chambre des assurances sociales :\nA la forme : déclare le recours recevable.\nAu fond : l'admet. Annule la décision sur opposition du 30 mars 2022. Dit que l'assurée a droit à la prise en charge des coûts de l'extraction et de la cryoconservation des spermatozoïdes.\n\nVoies de droit : le présent arrêt peut faire l'objet d'un recours en matière de droit public au Tribunal fédéral, Av. du Tribunal-Fédéral 29, 1000 Lausanne 14, dans un délai de 30 jours dès sa notification (art. 82 ss et 100 LTF).",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6b_cantonal_judgment",
+    "use_at_steps": [
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "la juridiction cantonale a admis le recours par arrêt du 21 juin 2024. Elle a annulé la décision sur opposition du 30 mars 2022 et dit que l'assurée a droit à la prise en charge des coûts de l'extraction et de la cryoconservation des spermatozoïdes."
+   }
+  },
+  {
+   "doc_id": "D02",
+   "type": "letter",
+   "title": "Communication relative aux primes de l'assurance obligatoire des soins pour 2023",
+   "author": "Moove Sympany AG, Service clientèle",
+   "recipient": "A.________",
+   "date": "2022-10-14",
+   "reference": "MS/KD/____/2022",
+   "body": "Moove Sympany AG\nService clientèle\n____\n\nA.________\n____\n\n____, le 14 octobre 2022\n\nVotre numéro d'assuré(e) : ____\nObjet : Prime 2023 de l'assurance obligatoire des soins\n\nMadame,\n\nNous vous informons que votre prime mensuelle pour l'assurance obligatoire des soins (assurance de base) sera adaptée au 1er janvier 2023. Le nouveau montant figure sur la police d'assurance ci-jointe, qui remplace celle qui vous a été adressée précédemment.\n\nLa franchise annuelle et le modèle d'assurance que vous avez choisis restent inchangés. Si vous souhaitez modifier votre franchise ou changer d'assureur, vous devez nous en informer par écrit au plus tard le 30 novembre 2022, conformément aux dispositions légales applicables en matière de changement d'assureur.\n\nVous pouvez en tout temps consulter votre décompte de primes et vos attestations fiscales sur votre espace client en ligne. Pour toute question concernant le paiement des primes, notre service clientèle reste à votre disposition du lundi au vendredi de 8 h à 17 h.\n\nNous vous remercions de votre confiance et vous prions d'agréer, Madame, nos salutations distinguées.\n\nMoove Sympany AG\nService clientèle\n\nAnnexe : police d'assurance 2023",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T6_lookalike",
+    "trap_note": "Lettre authentique de la même caisse à la même assurée, mais sur les primes 2023 : sujet sans rapport avec la prise en charge de la cryoconservation.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D03",
+   "type": "claim",
+   "title": "Demande de prise en charge des coûts de congélation et de conservation de spermatozoïdes",
+   "author": "A.________",
+   "recipient": "Moove Sympany AG, Service des prestations",
+   "date": "2021-09-21",
+   "reference": "Assurée n° ____",
+   "body": "A.________\n____\n\nMoove Sympany AG\nService des prestations\n____\n\n____, le 21 septembre 2021\n\nObjet : demande de prise en charge – congélation et conservation de spermatozoïdes\n\nMadame, Monsieur,\n\nJe suis assurée auprès de votre caisse pour l'assurance obligatoire des soins. Je présente une dysphorie de genre et je prends des hormones dans ce cadre.\n\nPar la présente, je vous prie de bien vouloir prendre en charge les coûts de la congélation de spermatozoïdes (150 fr.) ainsi que les frais de conservation de ceux-ci (150 fr.). Ces prestations ont été fournies par le laboratoire B.________ SA, qui m'a adressé une facture datée du 18 août 2021 d'un montant de 364 fr. 70, que vous trouverez en annexe.\n\nJe vous serais reconnaissante de bien vouloir me communiquer votre décision par écrit et reste à votre disposition pour tout renseignement complémentaire.\n\nJe vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.\n\n[signature]\nA.________\n\nAnnexe : facture du laboratoire B.________ SA du 18 août 2021 (364 fr. 70)",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S1_claim",
+    "use_at_steps": [
+     "S3_pre_decision",
+     "S4_decision",
+     "S5_objection",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "le 21 septembre 2021, l'assurée a requis la prise en charge des coûts d'une congélation de spermatozoïdes (150 fr.) et des frais de conservation de ceux-ci (150 fr.; facture du laboratoire B.________ SA du 18 août 2021 d'un montant de 364 fr. 70)"
+   }
+  },
+  {
+   "doc_id": "D04",
+   "type": "letter",
+   "title": "Écriture complémentaire à la Chambre des assurances sociales",
+   "author": "A.________",
+   "recipient": "Cour de justice de la République et canton de Genève, Chambre des assurances sociales",
+   "date": "2023-09-12",
+   "reference": "A/____/2022",
+   "body": "A.________\n____\n\nCour de justice\nChambre des assurances sociales\nRue du Mont-Blanc 3\n1201 Genève\n\n____, le 12 septembre 2023\n\nEn la cause A/____/2022\nA.________ contre Vivao Sympany AG\n\nMadame la Présidente, Mesdames et Messieurs les Juges,\n\nJ'ai pris connaissance de l'avis de l'Office fédéral de la santé publique du 8 mars 2023 ainsi que du rapport du docteur C.________, spécialiste en gynécologie et obstétrique, du 7 juillet 2023, et je me permets de compléter mon recours par les remarques qui suivent.\n\nJe maintiens l'intégralité des conclusions de mon recours dirigé contre la décision sur opposition du 30 mars 2022. Je rappelle que je présente une dysphorie de genre, que je prends des hormones dans ce cadre et que la demande porte sur des coûts de 150 fr. pour la congélation et de 150 fr. pour la conservation de spermatozoïdes.\n\nJe demande que la présente écriture soit versée au dossier et reste à disposition de la Cour pour toute question.\n\nJe vous prie d'agréer, Madame la Présidente, Mesdames et Messieurs les Juges, l'expression de ma haute considération.\n\nA.________\n\n\n\n(signature)",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [],
+    "trap_type": "T3_unsent",
+    "trap_note": "Le bloc de signature est vide, sans numéro d'envoi recommandé ni timbre de réception du greffe, et le jugement cantonal ne mentionne aucune écriture de ce type : jamais déposée.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D05",
+   "type": "medical_report",
+   "title": "Rapport médical du service de gynécologie",
+   "author": "Dr C.________, spécialiste FMH en gynécologie et obstétrique, médecin chef de clinique, service de gynécologie, Hôpital D.________",
+   "recipient": "Cour de justice de la République et canton de Genève, Chambre des assurances sociales",
+   "date": "2023-07-07",
+   "reference": "A/____/2022 – dossier patient ____",
+   "body": "Hôpital D.________\nService de gynécologie\n____\n\nCour de justice\nChambre des assurances sociales\nRue du Mont-Blanc 3\n1201 Genève\n\n____, le 7 juillet 2023\n\nEn la cause A/____/2022 – A.________ c. Vivao Sympany AG\nRapport du médecin traitant\n\nMadame la Présidente, Mesdames et Messieurs les Juges,\n\nEn réponse à votre demande de renseignements, je vous transmets le présent rapport concernant A.________, née en 1999 de sexe masculin, suivie dans le cadre de notre service.\n\nDiagnostic mentionné au dossier : dysphorie de genre. La patiente prend des hormones dans ce cadre.\n\nObjet de la demande de la Cour : la prise en charge des coûts de l'extraction et de la cryoconservation de spermatozoïdes, que l'assurée a requise auprès de sa caisse-maladie le 21 septembre 2021 (congélation : 150 fr. ; conservation : 150 fr. ; facture du laboratoire B.________ SA du 18 août 2021).\n\nJe me suis limité dans le présent rapport aux éléments consignés dans le dossier médical de la patiente. Je reste à la disposition de la Cour pour tout renseignement complémentaire.\n\nVeuillez agréer, Madame la Présidente, Mesdames et Messieurs les Juges, mes salutations respectueuses.\n\nDr C.________\nMédecin chef de clinique\n\nAnnexe : liste des consultations",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S2_inquiry",
+    "use_at_steps": [
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "des renseignements auprès des médecins traitants de l'assurée (rapport du docteur C.________, spécialiste en gynécologie et obstétrique et médecin chef de clinique au service de gynécologie de l'Hôpital D.________, du 7 juillet 2023)"
+   }
+  },
+  {
+   "doc_id": "D06",
+   "type": "decision",
+   "title": "Décision",
+   "author": "Moove Sympany AG, Service juridique",
+   "recipient": "A.________",
+   "date": "2022-01-06",
+   "reference": "MS/PR/____/2022",
+   "body": "Moove Sympany AG\nService juridique\n____\n\nRecommandé\nA.________\n____\n\n____, le 6 janvier 2022\n\nDécision\nAssurance obligatoire des soins – assurée n° ____\nObjet : congélation et conservation de spermatozoïdes (150 fr. + 150 fr.)\n\nMadame,\n\nPar votre demande du 21 septembre 2021, vous avez sollicité la prise en charge des coûts d'une congélation de spermatozoïdes et des frais de conservation de ceux-ci, selon la facture du laboratoire B.________ SA du 18 août 2021 d'un montant de 364 fr. 70. Notre décompte de prestations du 1er novembre 2021 vous a informée du refus de prise en charge.\n\nNous confirmons ce refus par la présente décision. La cryoconservation des spermatozoïdes n'est une prestation obligatoire de l'assurance obligatoire des soins que dans le cadre d'une thérapie liée au cancer, d'une transplantation de cellules souches ou d'un traitement au cyclophosphamide. Les coûts de congélation et de cryoconservation ne sont dès lors pas pris en charge au titre de l'assurance obligatoire des soins.\n\nVoies de droit : vous pouvez former opposition par écrit auprès de Moove Sympany AG, à l'adresse ci-dessus, dans un délai de 30 jours dès la notification de la présente décision (art. 52 LPGA).\n\nMoove Sympany AG\nService juridique",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S5_objection",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Par décompte de prestations du 1er novembre 2021, puis décision du 6 janvier 2022, confirmée sur opposition le 30 mars suivant, la caisse-maladie a refusé de prendre en charge les coûts de congélation et de cryoconservation des spermatozoïdes"
+   }
+  },
+  {
+   "doc_id": "D07",
+   "type": "letter",
+   "title": "Convocation à la délibération publique",
+   "author": "Tribunal fédéral suisse, IIIe Cour de droit public, Greffe",
+   "recipient": "A.________ ; Vivao Sympany AG ; Office fédéral de la santé publique",
+   "date": "2026-05-26",
+   "reference": "9C_438/2024",
+   "body": "Tribunal fédéral suisse\nIIIe Cour de droit public\nAv. du Tribunal-Fédéral 29\n1000 Lausanne 14\n\nLausanne, le 26 mai 2026\n\nRecommandé\nA.________\n____\n\nProcédure 9C_438/2024\nVivao Sympany AG c. A.________\nObjet : assurance-maladie – cryoconservation de spermatozoïdes\n\nMadame,\n\nNous vous informons que, dans la cause citée en référence, la IIIe Cour de droit public délibérera en séance publique le 24 juin 2026. La séance se tiendra dans la salle d'audience du Tribunal fédéral, à Lausanne. Les parties peuvent y assister sans inscription préalable.\n\nLa présente convocation est également adressée à Vivao Sympany AG, ainsi qu'à l'Office fédéral de la santé publique. Les parties qui ne souhaitent pas assister à la séance n'ont aucune démarche à entreprendre.\n\nNous vous prions de croire, Madame, à l'assurance de notre considération distinguée.\n\nTRIBUNAL FÉDÉRAL SUISSE\nIIIe Cour de droit public\nLe Greffier : ____\n\nCopie : Vivao Sympany AG ; Office fédéral de la santé publique",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S7_federal_appeal",
+    "use_at_steps": [],
+    "trap_type": "T1_future",
+    "trap_note": "Daté du 26 mai 2026, donc postérieur au jugement cantonal et à l'étape où il est placé, et se réfère à une procédure fédérale que l'agent ne connaît pas encore.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D08",
+   "type": "appeal",
+   "title": "Recours en matière de droit public",
+   "author": "Vivao Sympany AG",
+   "recipient": "Tribunal fédéral suisse",
+   "date": "2024-08-19",
+   "reference": "Dossier cantonal ATAS/____/2024",
+   "body": "Vivao Sympany AG\n____\n\nTribunal fédéral suisse\nAv. du Tribunal-Fédéral 29\n1000 Lausanne 14\n\nRecommandé\n____, le 19 août 2024\n\nRECOURS EN MATIÈRE DE DROIT PUBLIC\n\nde Vivao Sympany AG, recourante\ncontre\nl'arrêt de la Chambre des assurances sociales de la Cour de justice de la République et canton de Genève du 21 juin 2024 (A/____/2022 ATAS/____/2024)\nintimée : A.________\n\nCONCLUSIONS\nPrincipalement : réformer l'arrêt attaqué en ce sens que la décision sur opposition rendue par la recourante le 30 mars 2022 est confirmée.\nSubsidiairement : annuler l'arrêt attaqué et renvoyer la cause à la juridiction cantonale pour nouveau jugement dans le sens des considérants.\n\nEN FAIT\n1. A.________, assurée auprès de Moove Sympany AG (fusionnée avec Vivao Sympany AG en janvier 2024), a requis le 21 septembre 2021 la prise en charge de coûts de congélation et de conservation de spermatozoïdes (150 fr. + 150 fr.).\n2. La recourante a refusé cette prise en charge par décompte du 1er novembre 2021, puis décision du 6 janvier 2022 confirmée sur opposition le 30 mars 2022, considérant que la cryoconservation n'est une prestation obligatoire que dans le cadre d'une thérapie liée au cancer, d'une transplantation de cellules souches ou d'un traitement au cyclophosphamide.\n3. L'arrêt attaqué a admis le recours cantonal.\n\nLes griefs sont développés aux chapitres suivants.\n\nVivao Sympany AG\n[signature]",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S7_federal_appeal",
+    "use_at_steps": [
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Vivao Sympany interjette un recours en matière de droit public contre cet arrêt. Elle en demande principalement la réforme en ce sens que la décision sur opposition qu'elle a rendue le 30 mars 2022 est confirmée. Subsidiairement, la caisse-maladie conclut à l'annulation de l'arrêt entrepris et au renvoi de la cause"
+   }
+  },
+  {
+   "doc_id": "D09",
+   "type": "inquiry_report",
+   "title": "Avis de l'Office fédéral de la santé publique",
+   "author": "Office fédéral de la santé publique OFSP, Direction de projet Prestations",
+   "recipient": "Cour de justice de la République et canton de Genève, Chambre des assurances sociales",
+   "date": "2023-03-08",
+   "reference": "OFSP/____/2023",
+   "body": "Département fédéral de l'intérieur DFI\nOffice fédéral de la santé publique OFSP\nUnité de direction Assurance-maladie et accidents\n3003 Berne\n\nBerne, le 8 mars 2023\n\nCour de justice\nChambre des assurances sociales\nRue du Mont-Blanc 3\n1201 Genève\n\nVotre référence : A/____/2022\nA.________ c. Vivao Sympany AG – avis de l'OFSP\n\nMadame la Présidente, Mesdames et Messieurs les Juges,\n\nPar courrier de la Cour, nous avons été invités à nous déterminer dans la procédure citée en référence, qui oppose A.________, assurée auprès de Moove Sympany AG, à son assureur-maladie. La cause concerne la prise en charge des coûts de congélation (150 fr.) et de conservation (150 fr.) de spermatozoïdes, que l'assurée a requise le 21 septembre 2021 et que la caisse-maladie a refusée par décision du 6 janvier 2022, confirmée sur opposition le 30 mars 2022.\n\nNous avons pris connaissance de la décision sur opposition, selon laquelle la cryoconservation des spermatozoïdes n'est une prestation obligatoire que dans le cadre d'une thérapie liée au cancer, d'une transplantation de cellules souches ou d'un traitement au cyclophosphamide.\n\nNotre appréciation de la question posée par la Cour est développée dans la partie qui suit le présent courrier.\n\nNous vous prions d'agréer, Madame la Présidente, Mesdames et Messieurs les Juges, nos salutations distinguées.\n\nOffice fédéral de la santé publique\nSection Prestations de l'assurance-maladie",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S2_inquiry",
+    "use_at_steps": [
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Après avoir notamment sollicité l'avis de l'Office fédéral de la santé publique (OFSP; avis du 8 mars 2023)"
+   }
+  },
+  {
+   "doc_id": "D10",
+   "type": "statute_extract",
+   "title": "Loi fédérale sur l'assurance-maladie (LAMal), art. 25 – Prestations générales en cas de maladie",
+   "author": "Recueil systématique du droit fédéral (RS 832.10)",
+   "recipient": "Dossier",
+   "date": "2022-03-30",
+   "reference": "RS 832.10 – version consolidée du 1er janvier 2026",
+   "body": "RS 832.10\nLoi fédérale sur l'assurance-maladie (LAMal)\nDu 18 mars 1994\nÉtat le 1er janvier 2026\n\nTitre 3 Prestations\nChapitre 2 Prestations en cas de maladie\nSection 1 Définition\n\nArt. 25 Prestations générales en cas de maladie\n1 L'assurance obligatoire des soins prend en charge les coûts des prestations qui servent à diagnostiquer ou à traiter une maladie et ses séquelles.\n2 Ces prestations comprennent :\na. les examens, traitements et soins dispensés sous forme ambulatoire, au domicile du patient, en milieu hospitalier ou semi-hospitalier ou dans un établissement médico-social par des médecins, des chiropraticiens ou des personnes fournissant des prestations sur prescription ou sur mandat médical ;\nb. les analyses, médicaments, moyens et appareils diagnostiques ou thérapeutiques prescrits par un médecin ou, dans les limites fixées par le Conseil fédéral, par un chiropraticien ;\n[…]\n\nLes dispositions de la présente loi sont applicables aux assureurs reconnus conformément à l'art. 11 LAMal. Les prestations visées à l'art. 25 sont soumises aux conditions des art. 32 à 34.\n\nExtrait joint au dossier pour la décision sur opposition du 30 mars 2022.",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T5_wrong_law_version",
+    "trap_note": "Texte consolidé « état le 1er janvier 2026 », et non la version en vigueur à la date de la décision sur opposition du 30 mars 2022 : l'extrait est présenté comme joint à une décision qui précède de quatre ans sa consolidation.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D11",
+   "type": "decision",
+   "title": "Décision sur opposition",
+   "author": "Moove Sympany AG, Service juridique",
+   "recipient": "A.________",
+   "date": "2022-03-30",
+   "reference": "MS/PR/____/2022",
+   "body": "Moove Sympany AG\nService juridique\n____\n\nRecommandé\nA.________\n____\n\n____, le 30 mars 2022\n\nDécision sur opposition\nAssurance obligatoire des soins – assurée n° ____\nObjet : congélation et conservation de spermatozoïdes (150 fr. + 150 fr.)\n\nMadame,\n\nNous avons examiné l'opposition que vous avez formée contre notre décision du 6 janvier 2022 relative à la prise en charge des coûts de congélation et de cryoconservation de spermatozoïdes (facture du laboratoire B.________ SA du 18 août 2021, 364 fr. 70).\n\nAprès réexamen du dossier, nous rejetons l'opposition et confirmons notre décision. La cryoconservation des spermatozoïdes n'est une prestation obligatoire de l'assurance obligatoire des soins que dans le cadre d'une thérapie liée au cancer, d'une transplantation de cellules souches ou d'un traitement au cyclophosphamide. Les coûts de congélation et de cryoconservation ne sont dès lors pas pris en charge.\n\nVoies de droit : la présente décision peut faire l'objet d'un recours par écrit auprès de la Chambre des assurances sociales de la Cour de justice de la République et canton de Genève, Rue du Mont-Blanc 3, 1201 Genève, dans un délai de 30 jours dès sa notification (art. 56 et 60 LPGA).\n\nMoove Sympany AG\nService juridique",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S6_cantonal_appeal",
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "décision sur opposition le 30 mars suivant, la caisse-maladie a refusé de prendre en charge les coûts de congélation et de cryoconservation des spermatozoïdes au titre de l'assurance obligatoire des soins"
+   }
+  },
+  {
+   "doc_id": "D12",
+   "type": "appeal",
+   "title": "Recours contre la décision sur opposition du 30 mars 2022",
+   "author": "A.________",
+   "recipient": "Cour de justice de la République et canton de Genève, Chambre des assurances sociales",
+   "date": "2022-05-02",
+   "reference": "MS/PR/____/2022",
+   "body": "A.________\n____\n\nCour de justice\nChambre des assurances sociales\nRue du Mont-Blanc 3\n1201 Genève\n\nRecommandé\n____, le 2 mai 2022\n\nRECOURS\n\nde A.________, recourante\ncontre\nla décision sur opposition de Moove Sympany AG du 30 mars 2022, intimée\n\nConclusions : annuler la décision sur opposition du 30 mars 2022 et dire que l'assurée a droit à la prise en charge des coûts de la congélation et de la cryoconservation de ses spermatozoïdes.\n\nEn fait :\n1. Je présente une dysphorie de genre et prends des hormones dans ce cadre. Je suis assurée pour l'assurance obligatoire des soins auprès de Moove Sympany AG.\n2. Le 21 septembre 2021, j'ai requis la prise en charge des coûts de congélation (150 fr.) et de conservation (150 fr.) de spermatozoïdes, selon la facture du laboratoire B.________ SA du 18 août 2021.\n3. Par décompte du 1er novembre 2021, puis décision du 6 janvier 2022 confirmée sur opposition le 30 mars 2022, la caisse-maladie a refusé la prise en charge, au motif que la cryoconservation n'est une prestation obligatoire que dans certains cas (cancer, transplantation de cellules souches, cyclophosphamide).\n\nJe produis la décision attaquée. Mes griefs sont développés ci-dessous.\n\n[signature]\nA.________\n\nPièces : décision sur opposition du 30 mars 2022 ; facture du 18 août 2021",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "A.________ a formé recours contre la décision sur opposition devant la Cour de justice de la République et canton de Genève, Chambre des assurances sociales."
+   }
+  },
+  {
+   "doc_id": "D13",
+   "type": "pre_decision",
+   "title": "Décompte de prestations",
+   "author": "Moove Sympany AG, Service des prestations",
+   "recipient": "E.________",
+   "date": "2021-11-01",
+   "reference": "Décompte n° ____ – assuré n° ____",
+   "body": "Moove Sympany AG\nService des prestations\n____\n\nE.________\n____\nNé le 14.03.1997 – N° AVS 756.____.____.__\n\n____, le 1er novembre 2021\n\nDécompte de prestations n° ____\nAssurance obligatoire des soins\n\nFournisseur de prestations : laboratoire B.________ SA\nFacture du : 24 août 2021\nPrestations : congélation et conservation de spermatozoïdes\nMontant facturé : 364 fr. 70\n\nNous avons examiné la facture mentionnée ci-dessus. Le détail du traitement de cette facture figure dans le tableau annexé (positions, montants facturés, montants pris en compte, participation de l'assuré).\n\nSi vous n'êtes pas d'accord avec ce décompte, vous pouvez nous demander une décision écrite dans un délai de 30 jours. Nous vous recommandons de joindre à votre demande toute pièce utile.\n\nPour toute question, notre service des prestations reste à votre disposition.\n\nMoove Sympany AG\nService des prestations\n\nAnnexe : tableau récapitulatif",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S3_pre_decision",
+    "use_at_steps": [],
+    "trap_type": "T4_wrong_person",
+    "trap_note": "Décompte du même jour, même laboratoire et même montant, mais adressé à E.________, né le 14.03.1997 (A.________ est née en 1999) avec un autre numéro AVS et une facture du 24 août et non du 18 août 2021.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D14",
+   "type": "objection",
+   "title": "Opposition à la décision du 6 janvier 2022",
+   "author": "A.________",
+   "recipient": "Moove Sympany AG, Service juridique",
+   "date": "2022-02-04",
+   "reference": "MS/PR/____/2022",
+   "body": "A.________\n____\n\nMoove Sympany AG\nService juridique\n____\n\nRecommandé\n____, le 4 février 2022\n\nOpposition\nà votre décision du 6 janvier 2022 – assurée n° ____\n\nMadame, Monsieur,\n\nPar la présente, je forme opposition contre votre décision du 6 janvier 2022, par laquelle vous avez refusé de prendre en charge les coûts de congélation et de cryoconservation de mes spermatozoïdes.\n\nJe rappelle que je présente une dysphorie de genre et que je prends des hormones dans ce cadre. J'ai requis le 21 septembre 2021 la prise en charge de 150 fr. pour la congélation et de 150 fr. pour la conservation de spermatozoïdes (facture du laboratoire B.________ SA du 18 août 2021, 364 fr. 70).\n\nVous avez considéré que la cryoconservation des spermatozoïdes n'est une prestation obligatoire que dans le cadre d'une thérapie liée au cancer, d'une transplantation de cellules souches ou d'un traitement au cyclophosphamide. Je conteste cette appréciation et vous prie de bien vouloir rendre une décision sur opposition.\n\nJe vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.\n\n[signature]\nA.________",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S5_objection",
+    "use_at_steps": [
+     "S4_decision",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "décision du 6 janvier 2022, confirmée sur opposition le 30 mars suivant"
+   }
+  },
+  {
+   "doc_id": "D15",
+   "type": "pre_decision",
+   "title": "Décompte de prestations",
+   "author": "Moove Sympany AG, Service des prestations",
+   "recipient": "A.________",
+   "date": "2021-11-01",
+   "reference": "Décompte n° ____ – assurée n° ____",
+   "body": "Moove Sympany AG\nService des prestations\n____\n\nA.________\n____\nNée en 1999\n\n____, le 1er novembre 2021\n\nDécompte de prestations n° ____\nAssurance obligatoire des soins\n\nFournisseur de prestations : laboratoire B.________ SA\nFacture du : 18 août 2021\nPrestations : congélation de spermatozoïdes (150 fr.) ; conservation de spermatozoïdes (150 fr.)\nMontant facturé : 364 fr. 70\n\nNous avons examiné la facture mentionnée ci-dessus faisant suite à votre demande du 21 septembre 2021. La cryoconservation des spermatozoïdes n'est une prestation obligatoire que dans le cadre d'une thérapie liée au cancer, d'une transplantation de cellules souches ou d'un traitement au cyclophosphamide. Les coûts de congélation et de cryoconservation ne sont pas pris en charge au titre de l'assurance obligatoire des soins.\n\nSi vous n'êtes pas d'accord avec ce décompte, vous pouvez nous demander une décision écrite.\n\nMoove Sympany AG\nService des prestations",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S3_pre_decision",
+    "use_at_steps": [
+     "S4_decision",
+     "S5_objection",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Par décompte de prestations du 1er novembre 2021, puis décision du 6 janvier 2022 ... la caisse-maladie a refusé de prendre en charge les coûts de congélation et de cryoconservation des spermatozoïdes"
+   }
+  }
+ ],
+ "absent_document": {
+  "type": "medical_report",
+  "description": "Un certificat ou rapport du médecin traitant, établi au moment de la demande de 2021 (avant la décision du 6 janvier 2022), reliant la congélation des spermatozoïdes au traitement hormonal de la dysphorie de genre.",
+  "why_decisive": "Les rapports médicaux au dossier (docteur C.________, 7 juillet 2023) n'ont été recueillis que par la juridiction cantonale, et rien ne montre que la caisse ait disposé en 2021-2022 d'une pièce médicale établissant le lien entre l'extraction et la conservation de spermatozoïdes et le traitement suivi.",
+  "needed_at_step": "S4_decision"
+ },
+ "_generation": {
+  "model": "sonnet",
+  "seconds": 116.1,
+  "cost_usd": 0.2392724,
+  "session_id": "90e554ec-9c5e-4be8-b364-a310e76d0fa4"
+ },
+ "_check": []
+}

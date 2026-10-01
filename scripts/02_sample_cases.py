@@ -11,18 +11,21 @@ disability-pension reversals.
 Proposed 100 = greedy stratified pick from the pool by domain quota, language
 cap and outcome balance, highest hardness first. Deterministic.
 
-Outputs: testset/candidates_hard_pool.csv, testset/proposed_100.csv
+Outputs: data/work/candidates_hard_pool.csv, data/work/proposed_100.csv
 """
 from __future__ import annotations
 
 import pandas as pd
 
-from common import DATA, TESTSET
+from common import DATA, WORK
 
 MIN_YEAR = 2025
 DOMAIN_QUOTA = {"IV": 30, "UV": 25, "KV": 15, "BVG": 10, "AHV_EL": 10, "PRIV_VVG": 10}
 LANG_CAP = {"de": 60, "fr": 40, "it": 8}
 TARGET_REVERSAL_SHARE = 0.5
+# Institutional disputes with no insured person at the centre (authority vs authority,
+# insurer vs federal office, court costs). Found by reading the parties; see README 4.
+EXCLUDE = {"9C_250/2025", "9C_212/2025", "8C_531/2024"}
 
 COLS = [
     "case_id", "decision_date", "language", "chamber", "domain", "area_raw", "subject",
@@ -68,10 +71,10 @@ def pick_100(pool: pd.DataFrame) -> pd.DataFrame:
 
 def main() -> None:
     idx = pd.read_parquet(DATA / "index.parquet")
-    base = idx[idx["in_scope"] & idx["merits"] & (idx["year"] >= MIN_YEAR)]
+    base = idx[idx["in_scope"] & idx["merits"] & (idx["year"] >= MIN_YEAR) & ~idx["case_id"].isin(EXCLUDE)]
     pool = base[base["sig_panel5"] | base["sig_publication"] | base["sig_long"]].copy()
     pool = pool.sort_values(["hardness", "decision_date"], ascending=[False, False])
-    pool[COLS].to_csv(TESTSET / "candidates_hard_pool.csv", index=False)
+    pool[COLS].to_csv(WORK / "candidates_hard_pool.csv", index=False)
 
     print("in-scope merits >= %d: %d | hard pool: %d" % (MIN_YEAR, len(base), len(pool)))
     print("\npool by domain x outcome"); print(pd.crosstab(pool["domain"], pool["outcome"], margins=True).to_string())
@@ -79,12 +82,12 @@ def main() -> None:
     print("\npool hardness distribution"); print(pool["hardness"].value_counts().sort_index().to_dict())
 
     sel = pick_100(pool)
-    sel[COLS].to_csv(TESTSET / "proposed_100.csv", index=False)
+    sel[COLS].to_csv(WORK / "proposed_100.csv", index=False)
     print("\nproposed selection:", len(sel))
     print(pd.crosstab(sel["domain"], sel["outcome"], margins=True).to_string())
     print(pd.crosstab(sel["domain"], sel["language"], margins=True).to_string())
     print("signals in selection:", {c: int(sel[c].sum()) for c in ["sig_reversal", "sig_panel5", "sig_publication", "sig_long", "sig_subject"]})
-    print("wrote", TESTSET / "candidates_hard_pool.csv", "and", TESTSET / "proposed_100.csv")
+    print("wrote", WORK / "candidates_hard_pool.csv", "and", WORK / "proposed_100.csv")
 
 
 if __name__ == "__main__":

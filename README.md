@@ -2,7 +2,7 @@
 
 A hard, 100-case evaluation set built from Swiss Federal Supreme Court decisions on **personal-incident insurance**: illness, accident, disability, daily allowance, pension-fund invalidity and the coordination between them. Plus a harness to compare a fine-tuned legal model against frontier models on the same prompt, the same tools and the same agent loop.
 
-Each case is a timeline of events, presented out of order, with decision points where a party (the insured person, the employer, the insurer) had to make a call. The model rebuilds the timeline, makes each call, and cites the law it relies on. The court's ruling tells us which calls were right. See [docs/case-format-timeline.md](docs/case-format-timeline.md) for the format and a fully worked example.
+The main task is procedural: each case is walked step by step (claim, inquiry, decision, objection, cantonal appeal, federal appeal) with a dossier of generated documents that contains traps (future documents, superseded versions, unsent drafts, wrong person, wrong law version, look-alikes, and a decisive document that is missing). At each step the agent must name the next action and deadline, pick the documents to use and refuse, and cite the law in the right version. See [docs/dossier-and-traps.md](docs/dossier-and-traps.md) for the format, the trap taxonomy and a fully worked example, and [docs/case-format-timeline.md](docs/case-format-timeline.md) for the timeline and decision-call variant. The outcome prediction task is kept as a cheap baseline.
 
 Trilingual (DE / FR / IT). All source material is CC-BY 4.0 from the Federal Supreme Court.
 
@@ -180,11 +180,12 @@ The v2 record (timeline, actors, decision points, outcome, citations) is specifi
 
 ### Validation before a case enters the set
 
-1. **Label cross-check.** The outcome from the index must agree with the dispositive wording. On the proposed 100: 96 agree, 2 are joined cases the regex does not parse, and 2 are **index errors on Italian decisions** (the index says dismissal, the dispositive says partially admitted). Rule: for Italian cases the label is always taken from the dispositive.
-2. **Citation gold set.** Articles of the BGG / LTF are admissibility boilerplate and are excluded. Leading cases are part of the gold set: causality rulings often rest on one article and seven precedents.
-3. **Leak check, automated.** Facts are searched for phrases that state the Federal Supreme Court's own result.
-4. **Leak check, human.** A law student sees only the shuffled events up to each decision point for 10 cases and picks an option. Points that are trivially inferable are dropped.
-5. **Decision points.** Every point is validated by the law student against the consideration it rests on; `scored` is set to false where the court did not rule on that call.
+1. **Personal case only.** Disputes between authorities, insurers or companies with no insured person at the centre are excluded (three found in the first selection: premium subsidies, drug list, court costs). The facts must mention an anonymised person.
+2. **Label cross-check.** The outcome from the index must agree with the dispositive wording. On the proposed 100: 96 agree, 2 are joined cases the regex does not parse, and 2 are **index errors on Italian decisions** (the index says dismissal, the dispositive says partially admitted). Rule: for Italian cases the label is always taken from the dispositive.
+3. **Citation gold set.** Articles of the BGG / LTF are admissibility boilerplate and are excluded. Leading cases are part of the gold set: causality rulings often rest on one article and seven precedents.
+4. **Leak check, automated.** Facts are searched for phrases that state the Federal Supreme Court's own result.
+5. **Leak check, human.** A law student sees only the shuffled events up to each decision point for 10 cases and picks an option. Points that are trivially inferable are dropped.
+6. **Decision points and dossiers.** Every point is validated by the law student against the consideration it rests on; `scored` is set to false where the court did not rule on that call.
 
 ---
 
@@ -195,33 +196,37 @@ swiss-evaluation-dataset/
 ├── README.md
 ├── requirements.txt
 ├── docs/
-│   └── case-format-timeline.md    # v2 record format and worked example
-├── scripts/
+│   ├── dossier-and-traps.md       # main task design: procedural steps, generated documents, traps
+│   └── case-format-timeline.md    # earlier timeline / decision-call variant
+├── scripts/                       # run in order; each one is a single python file
 │   ├── common.py                  # paths, domain mapping, section split, citation regexes
 │   ├── 01_build_index.py          # bger-update -> data/index.parquet (+ hardness signals)
-│   ├── 02_sample_cases.py         # hard pool + proposed 100 -> testset/*.csv
-│   ├── 03_fetch_text.py           # entscheidsuche.ch -> data/raw/, data/parsed/<case>.json
-│   ├── 04_build_timeline.py       # (next) dated events from the facts section
-│   ├── 05_draft_decision_points.py# (next) LLM draft, student-validated
-│   ├── 06_validate.py             # (next) label, article table, leak flags
-│   └── 07_translate.py            # (next) DE <-> FR
-├── eval/                          # (day 3) run_eval.py, prompts/, tools/, scoring.py
-├── testset/
-│   ├── candidates_hard_pool.csv   # 151 candidates with all signals
-│   ├── proposed_100.csv           # current proposed selection
-│   └── swiss_ruling_eval_100.jsonl# (final) v2 records
-├── data/                          # gitignored: snapshots, listing, raw HTML, parsed JSON
+│   ├── 02_sample_cases.py         # hard pool + proposed 100 -> data/work/
+│   ├── 03_fetch_text.py           # entscheidsuche.ch -> data/raw/, data/parsed/
+│   ├── 04_assemble_testset.py     # -> testset/cases_100.jsonl
+│   ├── 05_split_agent_input.py    # outcome task files -> data/work/agent_input_100.jsonl, gold_100.jsonl
+│   ├── 06_procedural_history.py   # dated procedural acts -> data/procedural/
+│   ├── 07_generate_dossier.py     # -> testset/dossiers/<case>.json (Claude CLI, headless)
+│   └── 08_step_questions.py       # -> testset/questions/<case>.jsonl
+├── testset/                       # the deliverable, see testset/README.md
+│   ├── README.md
+│   ├── cases_100.jsonl            # the 100 rulings: facts, considerations, dispositive, citations
+│   ├── dossiers/<case>.json       # generated documents + labelled traps (5 pilots so far)
+│   └── questions/<case>.jsonl     # per-step agent prompt + gold (5 pilots so far)
+├── data/                          # gitignored, regenerable
+│   ├── work/                      # candidate lists, intermediate tables, outcome-task files
+│   ├── raw/ parsed/ procedural/   # downloaded and parsed rulings
+│   └── *.parquet, listing html    # snapshots
 └── results/                       # gitignored except summary.csv
 ```
-
----
 
 ## 6. Plan
 
 | Step | Deliverable | Done when |
 |---|---|---|
 | done | Index, sampler, fetcher, parser | 100 cases fetched and parsed, 100 % section split, label cross-check run |
-| next | Timeline builder, decision-point drafts | every case has a dated event list and 2 to 4 draft decision points with the consideration they rest on |
+| done (pilot) | Dossier generator and step questions on 5 cases | 5 dossiers pass the automatic checks and the leak scan; 6 to 12 step questions per case |
+| next | Dossiers for all 100, reviewer pass | `07 --all` run (about 25 USD, 3 hours); a jurist checks the real documents and refines the absent document from the considerations |
 | next | Validation and human review | law student has validated all points, 10-case blind check done, Italian labels corrected from dispositive |
 | then | Harness and baseline | fine-tuned model, Apertus and at least two frontier models run end to end, summary.csv produced, DE / FR cross-language runs |
 
@@ -239,6 +244,14 @@ uv pip install --python .venv/Scripts/python.exe -r requirements.txt
 ```
 
 `03_fetch_text.py --pool` fetches the whole hard pool instead of the proposed 100. `01_build_index.py --refresh` forces a new snapshot.
+
+Dossier generation uses the Claude Code CLI in headless mode with your login (no API key). It finds the binary bundled with the VS Code extension, or set `CLAUDE_BIN`:
+
+```bash
+.venv/Scripts/python.exe scripts/07_generate_dossier.py --cases 8C_229/2024   # one case, about 2 minutes
+.venv/Scripts/python.exe scripts/07_generate_dossier.py --all                 # all 100
+.venv/Scripts/python.exe scripts/08_step_questions.py
+```
 
 ---
 

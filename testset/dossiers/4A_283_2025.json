@@ -1,0 +1,380 @@
+{
+ "case_id": "4A_283/2025",
+ "language": "de",
+ "steps": [
+  {
+   "code": "S3_pre_decision",
+   "date": "2023-08-17",
+   "actor": "insurer",
+   "act": "Die Beklagte als Unfallversicherung teilt dem Kläger mit, die aktuellen Beschwerden und Befunde stünden mit überwiegender Wahrscheinlichkeit nicht in natürlichem Kausalzusammenhang mit dem Unfallereignis vom 7. Oktober 2022.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S1_claim",
+   "date": "2023-08-18",
+   "actor": "employer",
+   "act": "Die Arbeitgeberin meldet der Beklagten mit Schadenmeldung eine krankheitsbedingte Arbeitsunfähigkeit des Klägers ab dem 1. August 2023 (Krankentaggeldversicherung).",
+   "deadline_rule": null
+  },
+  {
+   "code": "S2_inquiry",
+   "date": "2023-08-28",
+   "actor": "insurer",
+   "act": "Die Beklagte bestätigt dem Kläger den Eingang der Meldung und teilt mit, er werde im Rahmen der kollektiven Krankentaggeldversicherung begleitet; die Arbeitgeberin meldet am selben Tag die Auflösung des Arbeitsverhältnisses per 31. Juli 2023.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S4_decision",
+   "date": "2023-10-18",
+   "actor": "insurer",
+   "act": "Die Beklagte stellt gestützt auf die versicherungsmedizinische Beurteilung vom 5. Oktober 2023 die Unfallleistungen per 31. Juli 2023 ein (Verfügung).",
+   "deadline_rule": "30 Tage ab Eröffnung für die Einsprache, Art. 52 und Art. 60 ATSG"
+  },
+  {
+   "code": "S4_decision",
+   "date": "2023-11-14",
+   "actor": "insurer",
+   "act": "Die Beklagte teilt dem Kläger mit, ab dem 1. August 2023 bestehe in der Krankentaggeldversicherung wegen Ziffer 16.2 AVB kein Leistungsanspruch, und verneint einen Übertritt in die Einzelversicherung wegen Wohnsitzes in Deutschland.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S5_objection",
+   "date": null,
+   "actor": "insured",
+   "act": "Der Kläger erhebt gegen die Verfügung vom 18. Oktober 2023 Einsprache.",
+   "deadline_rule": "30 Tage ab Eröffnung der Verfügung, Art. 52 Abs. 1 und Art. 60 ATSG"
+  },
+  {
+   "code": "S5_objection",
+   "date": "2024-01-26",
+   "actor": "insurer",
+   "act": "Die Beklagte weist die Einsprache mit Einspracheentscheid ab.",
+   "deadline_rule": "30 Tage ab Eröffnung für die Beschwerde, Art. 56 und Art. 60 ATSG"
+  },
+  {
+   "code": "S4_decision",
+   "date": "2024-04-05",
+   "actor": "insurer",
+   "act": "Die Beklagte hält mit Schreiben an ihrer Leistungsablehnung in der Krankentaggeldversicherung fest.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S6_cantonal_appeal",
+   "date": "2024-05-29",
+   "actor": "insured",
+   "act": "Der Kläger erhebt beim Sozialversicherungsgericht des Kantons Basel-Stadt Klage auf Krankentaggeld von Fr. 146.85 pro Tag vom 1. August 2023 bis 31. Mai 2024 nebst Zins.",
+   "deadline_rule": null
+  },
+  {
+   "code": "S6b_cantonal_judgment",
+   "date": "2025-01-30",
+   "actor": "cantonal_court",
+   "act": "Das Sozialversicherungsgericht weist die Klage ab; die krankheitsbedingte Arbeitsunfähigkeit habe am 1. August 2023 begonnen, als keine Versicherungsdeckung mehr bestanden habe.",
+   "deadline_rule": "30 Tage ab Eröffnung für die Beschwerde in Zivilsachen, Art. 100 Abs. 1 BGG"
+  },
+  {
+   "code": "S7_federal_appeal",
+   "date": null,
+   "actor": "insured",
+   "act": "Der Kläger erhebt Beschwerde in Zivilsachen beim Bundesgericht und beantragt Aufhebung des Urteils sowie Krankentaggeld für die Zeit vom 1. August 2023 bis 29. November 2024 (Fr. 71'515.95) nebst Zins; Beklagte und Sozialversicherungsgericht beantragen Abweisung.",
+   "deadline_rule": "30 Tage ab Eröffnung des Urteils, Art. 100 Abs. 1 BGG"
+  }
+ ],
+ "documents": [
+  {
+   "doc_id": "D01",
+   "type": "judgment",
+   "title": "Urteil des Sozialversicherungsgerichts",
+   "author": "Sozialversicherungsgericht des Kantons Basel-Stadt",
+   "recipient": "A.________; B.________ AG",
+   "date": "2025-01-30",
+   "reference": "KK.2024.18",
+   "body": "Sozialversicherungsgericht des Kantons Basel-Stadt\nUrteil vom 30. Januar 2025\nIn Sachen A.________, Kläger, gegen B.________ AG, Beklagte, betreffend Krankentaggeld.\nSachverhalt: Der Kläger arbeitete ab dem 20. September 2021 bei der C.________ AG und war über diese bei der Beklagten kollektiv krankentaggeldversichert. Am 7. Oktober 2022 erlitt er einen Unfall. Die Arbeitgeberin kündigte das Arbeitsverhältnis am 26. Mai 2023 auf den 31. Juli 2023. Mit Klage vom 29. Mai 2024 beantragte der Kläger, die Beklagte sei zu verpflichten, ihm für die Zeit vom 1. August 2023 bis 31. Mai 2024 ein Krankentaggeld von Fr. 146.85 pro Tag (Fr. 44'789.25) nebst Zins auszurichten.\nErwägungen: Der Zeitpunkt, an dem die krankheitsbedingte Arbeitsunfähigkeit begonnen hat, fällt auf den 1. August 2023. In diesem Zeitpunkt bestand keine Versicherungsdeckung mehr.\nDemgemäss erkennt das Sozialversicherungsgericht: Die Klage wird abgewiesen.\nRechtsmittelbelehrung: Gegen dieses Urteil kann innert 30 Tagen seit Eröffnung beim Bundesgericht, 1000 Lausanne 14, Beschwerde in Zivilsachen erhoben werden (Art. 72 ff., Art. 100 Abs. 1 BGG).\nIm Namen des Sozialversicherungsgerichts, die Präsidentin / die Gerichtsschreiberin",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6b_cantonal_judgment",
+    "use_at_steps": [
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Urteil vom 30. Januar 2025 wies das Sozialversicherungsgericht die Klage ab. Es erwog, der Zeitpunkt, an dem die krankheitsbedingte Arbeitsunfähigkeit begonnen habe, falle auf den 1. August 2023."
+   }
+  },
+  {
+   "doc_id": "D02",
+   "type": "objection",
+   "title": "Einsprache gegen das Schreiben vom 14. November 2023",
+   "author": "A.________",
+   "recipient": "B.________ AG, Leistungsabteilung Krankentaggeld, ____",
+   "date": "2023-12-01",
+   "reference": "Schaden-Nr. KT-2023-____",
+   "body": "A.________\n____\n____ (Deutschland)\n\nB.________ AG\nLeistungsabteilung Krankentaggeld\n____\n\n____, 1. Dezember 2023\n\nEinsprache gegen das Schreiben vom 14. November 2023 betreffend Krankentaggeld\n\nSehr geehrte Damen und Herren\n\nMit Schreiben vom 14. November 2023 teilten Sie mir mit, die Unfallversicherung habe die Unfallleistungen per 31. Juli 2023 eingestellt und ein Krankheitsfall sei per 1. August 2023 angelegt worden. Gestützt auf Ziffer 16.2 Ihrer Allgemeinen Versicherungsbedingungen ende der Versicherungsschutz bei Beendigung des Arbeitsvertrags, weshalb ab dem 1. August 2023 kein Leistungsanspruch bestehe. Da ich in Deutschland wohne, hätte ich keinen Anspruch auf Übertritt in die Einzelversicherung.\n\nHiermit erhebe ich Einsprache gegen diese Mitteilung und beantrage, mir ab dem 1. August 2023 das versicherte Krankentaggeld auszurichten. Ich bitte Sie, die Leistungsablehnung zu überprüfen und mir einen anfechtbaren Entscheid zuzustellen. Eine nähere Begründung behalte ich mir vor.\n\nFreundliche Grüsse\n\n\n______________________\nA.________",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T3_unsent",
+    "trap_note": "Die Einsprache trägt keine Unterschrift, keine Einschreibenummer und keinen Eingangsstempel der Beklagten, und im weiteren Verfahren wird nur die Einsprache gegen die Verfügung vom 18. Oktober 2023 erwähnt; sie wurde nie eingereicht.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D03",
+   "type": "decision",
+   "title": "Verfügung betreffend Einstellung der Unfallversicherungsleistungen",
+   "author": "B.________ AG, Unfallversicherung",
+   "recipient": "A.________",
+   "date": "2023-10-18",
+   "reference": "Unfall-Nr. UV-2022-____ / Verfügung",
+   "body": "B.________ AG, Unfallversicherung\n____\n\nEinschreiben\nA.________\n____\n\n____, 18. Oktober 2023\n\nVerfügung\nVersicherter: A.________; Ereignis vom 7. Oktober 2022\n\nGestützt auf die versicherungsmedizinische Beurteilung vom 5. Oktober 2023 von Dr. med. D.________, Facharzt für Chirurgie FMH, verfügen wir:\n\nAufgrund des fehlenden Nachweises einer frischen, unfallbedingten strukturellen Verletzung ist von einer Prellung bzw. Stauchung der Brust- und/oder Lendenwirbelsäule auszugehen. Die maximale Behandlungsdauer beträgt sechs Wochen, womit der Status quo sine spätestens Ende November 2022 erreicht ist. Die gesundheitlichen Beschwerden am Rücken sind demnach nicht mehr mit überwiegender Wahrscheinlichkeit auf das Ereignis vom 7. Oktober 2022 zurückzuführen.\n\nDie Leistungen (Taggeld und Heilbehandlung) werden per 31. Juli 2023 eingestellt.\n\nRechtsmittelbelehrung: Gegen diese Verfügung kann innert 30 Tagen seit Eröffnung bei der B.________ AG, ____, schriftlich Einsprache erhoben werden (Art. 52 und Art. 60 ATSG). Die Einsprache muss einen Antrag und eine Begründung enthalten.\n\nB.________ AG, Unfallversicherung",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S5_objection",
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Verfügung vom 18. Oktober 2023 teilte sie ihm gestützt auf die versicherungsmedizinische Beurteilung vom 5. Oktober 2023 von Dr. med. D.________ (Facharzt für Chirurgie FMH) mit, [...] weshalb die Leistungen per 31. Juli 2023 eingestellt würden."
+   }
+  },
+  {
+   "doc_id": "D04",
+   "type": "letter",
+   "title": "Stellungnahme zur Beschwerde in Zivilsachen",
+   "author": "Sozialversicherungsgericht des Kantons Basel-Stadt",
+   "recipient": "Schweizerisches Bundesgericht, I. zivilrechtliche Abteilung",
+   "date": "2025-04-22",
+   "reference": "KK.2024.18 / 4A_283/2025",
+   "body": "Sozialversicherungsgericht des Kantons Basel-Stadt\n____\n\nSchweizerisches Bundesgericht\nI. zivilrechtliche Abteilung\n1000 Lausanne 14\n\n____, 22. April 2025\n\nBeschwerdeverfahren 4A_283/2025\nA.________ gegen B.________ AG, Krankentaggeld\n\nSehr geehrte Damen und Herren\n\nMit Verfügung des Instruktionsrichters wurde uns Gelegenheit gegeben, uns zur Beschwerde in Zivilsachen von A.________ zu äussern.\n\nDer Beschwerdeführer beantragt im Wesentlichen, unser Urteil vom 30. Januar 2025 sei aufzuheben und die Beschwerdegegnerin sei zu verpflichten, ihm für die Zeit vom 1. August 2023 bis und mit dem 29. November 2024 ein Krankentaggeld von Fr. 146.85 pro Tag (entsprechend Fr. 71'515.95) nebst Zins auszurichten.\n\nWir verweisen auf die Erwägungen unseres Urteils und beantragen die Abweisung der Beschwerde. Die kantonalen Akten haben wir beigelegt.\n\nFreundliche Grüsse\nSozialversicherungsgericht des Kantons Basel-Stadt\n\nDie Gerichtsschreiberin\n\nBeilage: kantonale Akten (KK.2024.18)",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S7_federal_appeal",
+    "use_at_steps": [],
+    "trap_type": "T1_future",
+    "trap_note": "Das Dokument ist auf den 22. April 2025 datiert, also nach dem kantonalen Urteil vom 30. Januar 2025, und verweist auf ein Bundesgerichtsverfahren, das in früheren Schritten noch nicht existiert.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D05",
+   "type": "claim",
+   "title": "Schadenmeldung Krankheit (Kollektiv-Krankentaggeldversicherung)",
+   "author": "C.________ AG (Arbeitgeberin)",
+   "recipient": "B.________ AG, Krankentaggeld",
+   "date": "2023-08-18",
+   "reference": "Police KT-____ / Schadenmeldung",
+   "body": "C.________ AG\nPersonalabteilung\n____\n\nB.________ AG\nKollektiv-Krankentaggeldversicherung\n____\n\n____, 18. August 2023\n\nSchadenmeldung Krankheit\nPolice-Nr.: KT-____\nVersicherte Person: A.________, angestellt seit dem 20. September 2021\n\nWir melden Ihnen hiermit eine Arbeitsunfähigkeit des oben genannten Mitarbeiters wegen Krankheit ab dem 1. August 2023.\n\nAngaben zum Arbeitsverhältnis: Eintritt am 20. September 2021. Der Mitarbeiter ist bei Ihnen im Rahmen der kollektiven Krankentaggeldversicherung der C.________ AG versichert. Er ist zudem bei Ihnen obligatorisch unfallversichert; am 7. Oktober 2022 hat er einen Unfall erlitten, für den Ihre Unfallversicherung Leistungen erbracht hat.\n\nWir bitten Sie, den Eingang der Meldung zu bestätigen und das weitere Vorgehen mit dem Versicherten direkt zu klären.\n\nFreundliche Grüsse\n\nC.________ AG\nPersonalabteilung\n\nUnterschrift: ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S1_claim",
+    "use_at_steps": [
+     "S2_inquiry",
+     "S4_decision",
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Schadenmeldung vom 18. August 2023 meldete die Arbeitgeberin eine Arbeitsunfähigkeit des Klägers wegen Krankheit ab dem 1. August 2023."
+   }
+  },
+  {
+   "doc_id": "D06",
+   "type": "letter",
+   "title": "Schreiben betreffend Krankentaggeld ab 1. August 2023",
+   "author": "B.________ AG, Krankentaggeld",
+   "recipient": "A.________",
+   "date": "2023-11-14",
+   "reference": "Schaden-Nr. KT-2023-____",
+   "body": "B.________ AG\nKrankentaggeld\n____\n\nA.________\n____\n____ (Deutschland)\n\n____, 14. November 2023\n\nIhre Krankentaggeldversicherung; Schaden-Nr. KT-2023-____\n\nSehr geehrter Herr A.________\n\nDie Unfallversicherung hat die Unfallleistungen per 31. Juli 2023 eingestellt. Per 1. August 2023 wurde ein Krankheitsfall angelegt. Ihre ehemalige Arbeitgeberin hat uns am 28. August 2023 mitgeteilt, dass das Arbeitsverhältnis per 31. Juli 2023 aufgelöst worden ist.\n\nGemäss Ziffer 16.2 unserer Allgemeinen Versicherungsbedingungen (AVB) endet der Versicherungsschutz bei Beendigung des Arbeitsvertrags. Ab dem 1. August 2023 besteht deshalb kein Leistungsanspruch.\n\nDa Sie in Deutschland wohnen, haben Sie zudem keinen Anspruch auf Übertritt in die Einzelversicherung.\n\nWir bedauern, Ihnen keinen anderen Bescheid geben zu können, und danken für Ihr Verständnis.\n\nFreundliche Grüsse\n\nB.________ AG\nKrankentaggeld\n\ni.V. ____          ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Am 14. November 2023 schrieb die Beklagte dem Kläger, die Unfallversicherung habe die Unfallleistungen per 31. Juli 2023 eingestellt. [...] Aufgrund Ziffer 16.2 ihrer Allgemeinen Versicherungsbedingungen (AVB) ende der Versicherungsschutz bei Beendigung des Arbeitsvertrags."
+   }
+  },
+  {
+   "doc_id": "D07",
+   "type": "statute_extract",
+   "title": "Allgemeine Versicherungsbedingungen Kollektiv-Krankentaggeld, Ziffer 16 (Ausgabe 01.2025)",
+   "author": "B.________ AG",
+   "recipient": "Versicherte Personen",
+   "date": "2025-01-01",
+   "reference": "AVB KTG 01.2025 / Ziff. 16",
+   "body": "B.________ AG\nAllgemeine Versicherungsbedingungen (AVB)\nKollektiv-Krankentaggeldversicherung nach VVG\nAusgabe 01.2025, gültig ab 1. Januar 2025\n\n16. Ende des Versicherungsschutzes\n\n16.1 Der Versicherungsschutz für die einzelne versicherte Person endet mit dem Austritt aus dem versicherten Personenkreis, spätestens mit dem Ende des Vertrags.\n\n16.2 Der Versicherungsschutz endet bei Beendigung des Arbeitsvertrags. Bei Eintritt der Arbeitsunfähigkeit vor Beendigung des Arbeitsvertrags besteht der Anspruch auf Taggeld für diesen Versicherungsfall nach Vertragsende im Rahmen der vereinbarten Leistungsdauer weiter.\n\n16.3 Personen mit Wohnsitz im Ausland haben keinen Anspruch auf Übertritt in die Einzelversicherung.\n\n16.4 Die Versicherungsnehmerin ist verpflichtet, der B.________ AG den Austritt der versicherten Person innert 30 Tagen schriftlich zu melden.\n\nDiese Bedingungen ersetzen die früheren Ausgaben. Für bereits eingetretene Versicherungsfälle gelten die zum Zeitpunkt des Eintritts anwendbaren Bestimmungen.\n\nB.________ AG, ____",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T5_wrong_law_version",
+    "trap_note": "Es handelt sich um die AVB-Ausgabe 01.2025 mit geändertem Absatz 16.2 (Weitergeltung bei früherer Arbeitsunfähigkeit), die am 1. August 2023 nicht in Kraft war; die Beklagte stützte sich auf die damalige Fassung von Ziffer 16.2.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D08",
+   "type": "medical_report",
+   "title": "Versicherungsmedizinische Beurteilung",
+   "author": "Dr. med. D.________, Facharzt für Chirurgie FMH",
+   "recipient": "B.________ AG, Unfallversicherung",
+   "date": "2023-10-05",
+   "reference": "Unfall-Nr. UV-2022-____ / VMB",
+   "body": "Dr. med. D.________\nFacharzt für Chirurgie FMH\n____\n\nAn: B.________ AG, Unfallversicherung\n\n____, 5. Oktober 2023\n\nVersicherungsmedizinische Beurteilung (Aktenbeurteilung)\nVersicherter: A.________; Ereignis vom 7. Oktober 2022\n\nFragestellung: Natürlicher Kausalzusammenhang zwischen den aktuellen Rückenbeschwerden und dem Unfallereignis vom 7. Oktober 2022.\n\nBeurteilung: Es fehlt der Nachweis einer frischen, unfallbedingten strukturellen Verletzung. Es ist von einer Prellung bzw. Stauchung der Brust- und/oder Lendenwirbelsäule auszugehen. Die maximale Behandlungsdauer beträgt sechs Wochen. Der Status quo sine ist damit spätestens Ende November 2022 erreicht.\n\nSchlussfolgerung: Die gesundheitlichen Beschwerden am Rücken sind nicht mehr mit überwiegender Wahrscheinlichkeit auf das Ereignis vom 7. Oktober 2022 zurückzuführen.\n\nDiese Beurteilung beruht auf den mir zur Verfügung gestellten Akten; eine persönliche Untersuchung des Versicherten fand nicht statt.\n\nDr. med. D.________\nFacharzt für Chirurgie FMH",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S4_decision",
+    "use_at_steps": [
+     "S4_decision",
+     "S5_objection",
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "gestützt auf die versicherungsmedizinische Beurteilung vom 5. Oktober 2023 von Dr. med. D.________ (Facharzt für Chirurgie FMH) mit, aufgrund des fehlenden Nachweises einer frischen, unfallbedingten strukturellen Verletzung sei von einer Prellung bzw. Stauchung der Brust- und/oder Lendenwirbelsäule auszugehen."
+   }
+  },
+  {
+   "doc_id": "D09",
+   "type": "letter",
+   "title": "Schreiben betreffend natürlichen Kausalzusammenhang",
+   "author": "B.________ AG, Unfallversicherung",
+   "recipient": "A.________",
+   "date": "2023-08-17",
+   "reference": "Unfall-Nr. UV-2022-____",
+   "body": "B.________ AG\nUnfallversicherung\n____\n\nA.________\n____\n\n____, 17. August 2023\n\nUnfall vom 7. Oktober 2022; Unfall-Nr. UV-2022-____\n\nSehr geehrter Herr A.________\n\nSie haben am 7. Oktober 2022 einen Unfall erlitten. Wir haben als Unfallversicherung Taggeldleistungen erbracht und die Behandlungskosten übernommen.\n\nNach Prüfung der Akten teilen wir Ihnen mit, dass die aktuellen Beschwerden und Befunde mit überwiegender Wahrscheinlichkeit nicht in natürlichem Kausalzusammenhang mit dem Unfallereignis stehen.\n\nWir werden Ihnen unseren Entscheid zum weiteren Leistungsanspruch gesondert mitteilen. Für Rückfragen steht Ihnen Ihre Sachbearbeiterin gerne zur Verfügung.\n\nFreundliche Grüsse\n\nB.________ AG\nUnfallversicherung\n\ni.V. ____          ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S3_pre_decision",
+    "use_at_steps": [
+     "S4_decision",
+     "S5_objection"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Schreiben vom 17. August 2023 teilte die Beklagte dem Kläger mit, die aktuellen Beschwerden und Befunde stünden mit überwiegender Wahrscheinlichkeit nicht in natürlichem Kausalzusammenhang mit dem Unfallereignis."
+   }
+  },
+  {
+   "doc_id": "D10",
+   "type": "decision",
+   "title": "Verfügung betreffend Einstellung der Unfallversicherungsleistungen",
+   "author": "B.________ AG, Unfallversicherung",
+   "recipient": "E.________",
+   "date": "2023-10-18",
+   "reference": "Unfall-Nr. UV-2022-____ / Verfügung",
+   "body": "B.________ AG, Unfallversicherung\n____\n\nEinschreiben\nE.________\n(geb. 12.03.1979, AHV-Nr. 756.____.____.__)\n____\n\n____, 18. Oktober 2023\n\nVerfügung\nVersicherter: E.________; Unfallereignis vom 14. Oktober 2022\n\nGestützt auf die versicherungsmedizinische Beurteilung von Dr. med. D.________, Facharzt für Chirurgie FMH, verfügen wir:\n\nEine frische, unfallbedingte strukturelle Verletzung ist nicht nachgewiesen. Die Beschwerden stehen nicht mehr mit überwiegender Wahrscheinlichkeit im Zusammenhang mit dem Ereignis vom 14. Oktober 2022. Die Leistungen werden per 31. Juli 2023 eingestellt.\n\nRechtsmittelbelehrung: Gegen diese Verfügung kann innert 30 Tagen seit Eröffnung bei der B.________ AG, ____, schriftlich Einsprache erhoben werden (Art. 52 und Art. 60 ATSG). Die Einsprache muss einen Antrag und eine Begründung enthalten.\n\nB.________ AG, Unfallversicherung",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T4_wrong_person",
+    "trap_note": "Die Verfügung betrifft E.________ (anderer Anfangsbuchstabe, Geburtsdatum 12.03.1979, andere AHV-Nummer, Unfallereignis 14. Oktober 2022) und nicht den Kläger A.________ (Ereignis 7. Oktober 2022).",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D11",
+   "type": "appeal",
+   "title": "Klage auf Krankentaggeld",
+   "author": "A.________",
+   "recipient": "Sozialversicherungsgericht des Kantons Basel-Stadt",
+   "date": "2024-05-29",
+   "reference": "KK.2024.18",
+   "body": "A.________\n____\n____ (Deutschland)\n\nSozialversicherungsgericht des Kantons Basel-Stadt\n____\n\n____, 29. Mai 2024\n\nKlage\n\nin Sachen A.________, Kläger,\ngegen B.________ AG, Beklagte,\nbetreffend Krankentaggeld\n\nRechtsbegehren:\n1. Die Beklagte sei zu verpflichten, dem Kläger für die Zeit vom 1. August 2023 bis und mit 31. Mai 2024 ein Krankentaggeld in der Höhe von Fr. 146.85 pro Tag (entsprechend Fr. 44'789.25) nebst Zins auszurichten.\n2. Die Beklagte sei zu verpflichten, dem Kläger bei Nachweis einer über den 31. Mai 2024 andauernden Arbeitsunfähigkeit die Taggeldleistungen für jeden weiteren Krankheitstag auszurichten.\n\nBegründung:\nDer Kläger arbeitete ab dem 20. September 2021 bei der C.________ AG und war dadurch bei der Beklagten kollektiv krankentaggeldversichert. Die Beklagte hat mit Schreiben vom 14. November 2023 und vom 5. April 2024 Leistungen ab dem 1. August 2023 abgelehnt. Der Kläger macht geltend, ihm stehe das Krankentaggeld ab dem 1. August 2023 zu. Weitere Ausführungen bleiben vorbehalten.\n\nA.________",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S6_cantonal_appeal",
+    "use_at_steps": [
+     "S6b_cantonal_judgment",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Klage vom 29. Mai 2024 beantragte der Kläger beim Sozialversicherungsgericht des Kantons Basel-Stadt, die Beklagte sei zu verpflichten, ihm für die Zeit vom 1. August 2023 bis und mit 31. Mai 2024 ein Krankentaggeld in der Höhe von Fr. 146.85 pro Tag (entsprechend Fr. 44'789.25) nebst Zins auszurichten."
+   }
+  },
+  {
+   "doc_id": "D12",
+   "type": "decision",
+   "title": "Einspracheentscheid",
+   "author": "B.________ AG, Unfallversicherung",
+   "recipient": "A.________",
+   "date": "2024-01-26",
+   "reference": "Unfall-Nr. UV-2022-____ / Einsprache",
+   "body": "B.________ AG, Unfallversicherung\n____\n\nEinschreiben\nA.________\n____\n\n____, 26. Januar 2024\n\nEinspracheentscheid\nVersicherter: A.________; Ereignis vom 7. Oktober 2022\n\nGegenstand: Einsprache gegen die Verfügung vom 18. Oktober 2023\n\nMit Verfügung vom 18. Oktober 2023 haben wir gestützt auf die versicherungsmedizinische Beurteilung vom 5. Oktober 2023 von Dr. med. D.________ die Leistungen per 31. Juli 2023 eingestellt. Der Versicherte hat dagegen Einsprache erhoben.\n\nWir haben die Einsprache geprüft und halten an unserer Beurteilung fest. Es fehlt der Nachweis einer frischen, unfallbedingten strukturellen Verletzung; von einer Prellung bzw. Stauchung der Brust- und/oder Lendenwirbelsäule ist auszugehen. Die maximale Behandlungsdauer beträgt sechs Wochen, der Status quo sine war spätestens Ende November 2022 erreicht.\n\nEntscheid: Die Einsprache wird abgewiesen.\n\nRechtsmittelbelehrung: Gegen diesen Entscheid kann innert 30 Tagen seit Eröffnung beim zuständigen kantonalen Versicherungsgericht schriftlich Beschwerde erhoben werden (Art. 56 und Art. 60 ATSG). Die Beschwerdeschrift muss einen Antrag und eine Begründung enthalten.\n\nB.________ AG, Unfallversicherung",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S5_objection",
+    "use_at_steps": [
+     "S6_cantonal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Einspracheentscheid vom 26. Januar 2024 wies die Beklagte die gegen die Verfügung vom 18. Oktober 2023 erhobene Einsprache ab."
+   }
+  },
+  {
+   "doc_id": "D13",
+   "type": "medical_report",
+   "title": "Versicherungsmedizinische Beurteilung",
+   "author": "Dr. med. D.________, Facharzt für Chirurgie FMH",
+   "recipient": "B.________ AG, Unfallversicherung",
+   "date": "2023-09-28",
+   "reference": "Unfall-Nr. UV-2022-____ / VMB",
+   "body": "Dr. med. D.________\nFacharzt für Chirurgie FMH\n____\n\nAn: B.________ AG, Unfallversicherung\n\n____, 28. September 2023\n\nVersicherungsmedizinische Beurteilung (Aktenbeurteilung)\nVersicherter: A.________; Ereignis vom 7. Oktober 2022\n\nFragestellung: Natürlicher Kausalzusammenhang zwischen den aktuellen Rückenbeschwerden und dem Unfallereignis vom 7. Oktober 2022.\n\nBeurteilung: Es fehlt der Nachweis einer frischen, unfallbedingten strukturellen Verletzung. Es ist von einer Prellung bzw. Stauchung der Brust- und/oder Lendenwirbelsäule auszugehen. Die maximale Behandlungsdauer beträgt acht Wochen. Der Status quo sine ist damit spätestens Ende Dezember 2022 erreicht.\n\nSchlussfolgerung: Die gesundheitlichen Beschwerden am Rücken sind nicht mehr mit überwiegender Wahrscheinlichkeit auf das Ereignis vom 7. Oktober 2022 zurückzuführen.\n\nDiese Beurteilung beruht auf den mir zur Verfügung gestellten Akten; eine persönliche Untersuchung des Versicherten fand nicht statt.\n\nDr. med. D.________\nFacharzt für Chirurgie FMH",
+   "ground_truth": {
+    "status": "trap",
+    "step_created": "S4_decision",
+    "use_at_steps": [],
+    "trap_type": "T2_superseded",
+    "trap_note": "Die Beurteilung vom 28. September 2023 ist früher datiert als die massgebliche vom 5. Oktober 2023 und nennt acht Wochen und Ende Dezember 2022 statt sechs Wochen und Ende November 2022; die Verfügung stützt sich auf die spätere Fassung.",
+    "source_sentence": null
+   }
+  },
+  {
+   "doc_id": "D14",
+   "type": "letter",
+   "title": "Bestätigung Eingang Meldung Arbeitsunfähigkeit",
+   "author": "B.________ AG, Krankentaggeld",
+   "recipient": "A.________",
+   "date": "2023-08-28",
+   "reference": "Schaden-Nr. KT-2023-____",
+   "body": "B.________ AG\nKrankentaggeld\n____\n\nA.________\n____\n____ (Deutschland)\n\n____, 28. August 2023\n\nMeldung Arbeitsunfähigkeit; Schaden-Nr. KT-2023-____\n\nSehr geehrter Herr A.________\n\nWir haben die Schadenmeldung Ihrer Arbeitgeberin, der C.________ AG, vom 18. August 2023 bezüglich Ihrer Arbeitsunfähigkeit wegen Krankheit ab dem 1. August 2023 erhalten.\n\nSie werden im Rahmen der kollektiven Krankentaggeldversicherung durch unsere Fachstelle begleitet. Ihre Arbeitgeberin hat uns am heutigen Tag zudem mitgeteilt, dass das Arbeitsverhältnis per 31. Juli 2023 aufgelöst worden ist.\n\nBitte teilen Sie uns Änderungen in Ihrem Gesundheitszustand oder Ihrer Arbeitsfähigkeit umgehend mit. Für Fragen steht Ihnen Ihre Sachbearbeiterin gerne zur Verfügung.\n\nFreundliche Grüsse\n\nB.________ AG\nKrankentaggeld\n\ni.V. ____          ____",
+   "ground_truth": {
+    "status": "real",
+    "step_created": "S2_inquiry",
+    "use_at_steps": [
+     "S4_decision",
+     "S6_cantonal_appeal",
+     "S7_federal_appeal"
+    ],
+    "trap_type": null,
+    "trap_note": "",
+    "source_sentence": "Mit Schreiben vom 28. August 2023 teilte die Beklagte dem Kläger mit, sie habe die Meldung bezüglich der Arbeitsunfähigkeit erhalten und er werde im Rahmen der kollektiven Krankentaggeldversicherung begleitet."
+   }
+  }
+ ],
+ "absent_document": {
+  "type": "medical_report",
+  "description": "Ein ärztliches Zeugnis oder Gutachten, das den Beginn der Arbeitsunfähigkeit und deren Ursache (Krankheit oder Unfallfolge) zeitlich einordnet, namentlich ob die volle Arbeitsunfähigkeit seit dem 7. Oktober 2022 ununterbrochen bestand.",
+  "why_decisive": "Die Beklagte und das Sozialversicherungsgericht stellen auf den 1. August 2023 als Beginn der krankheitsbedingten Arbeitsunfähigkeit ab, weil das Arbeitsverhältnis am 31. Juli 2023 endete. Ohne ärztliche Einordnung, dass die Arbeitsunfähigkeit schon vor Vertragsende bestand, fehlt dem Kläger der Beleg für Versicherungsdeckung im Zeitpunkt des Eintritts.",
+  "needed_at_step": "S6_cantonal_appeal"
+ },
+ "_generation": {
+  "model": "sonnet",
+  "seconds": 95.6,
+  "cost_usd": 0.22479939999999998,
+  "session_id": "bcfc8009-0958-43b1-a1cf-b4a3076d7170"
+ },
+ "_check": []
+}

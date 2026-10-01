@@ -9,7 +9,8 @@ DATA = ROOT / "data"
 RAW = DATA / "raw"
 PARSED = DATA / "parsed"
 TESTSET = ROOT / "testset"
-for p in (DATA, RAW, PARSED, TESTSET):
+WORK = DATA / "work"          # intermediate tables, regenerable, gitignored
+for p in (DATA, RAW, PARSED, TESTSET, WORK):
     p.mkdir(parents=True, exist_ok=True)
 
 UA = {"User-Agent": "Mozilla/5.0 (swiss-evaluation-dataset; research)"}

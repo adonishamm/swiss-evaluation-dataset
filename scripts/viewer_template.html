@@ -1,0 +1,232 @@
+<title>Dossiers pièges</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a reviewer's desk. Left rail = the procedure (steps), main = the dossier as a stack of
+   paper documents; a header strip switches case and toggles the labels on or off. */
+:root {
+  --bg: #f3f2ee;          /* warm paper grey */
+  --surface: #ffffff;
+  --surface-2: #e9e7e0;
+  --fg: #1d1f24;
+  --muted: #5f6470;
+  --line: #d6d3ca;
+  --accent: #b5262a;      /* federal red, desaturated */
+  --accent-soft: #f6e3e3;
+  --ok: #2b7a4b;  --ok-soft: #dff0e5;
+  --trap: #a35a00; --trap-soft: #fbe9d0;
+  --absent: #4b4f9e; --absent-soft: #e4e4f5;
+  --font-ui: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-doc: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #17181c; --surface: #202229; --surface-2: #2a2d35; --fg: #e8e6e0; --muted: #a2a6b0; --line: #3a3d47;
+  --accent: #e0585b; --accent-soft: #3a2426; --ok: #6cc08d; --ok-soft: #1f3528; --trap: #e3a24a; --trap-soft: #3b2d17;
+  --absent: #9b9ee6; --absent-soft: #272848; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #17181c; --surface: #202229; --surface-2: #2a2d35; --fg: #e8e6e0; --muted: #a2a6b0; --line: #3a3d47;
+  --accent: #e0585b; --accent-soft: #3a2426; --ok: #6cc08d; --ok-soft: #1f3528; --trap: #e3a24a; --trap-soft: #3b2d17;
+  --absent: #9b9ee6; --absent-soft: #272848; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 14px; line-height: 1.5; margin: 0; }
+.wrap { padding-inline: 16px; padding-block: 12px 48px; max-width: 1400px; margin: 0 auto; }
+h1, h2, h3 { margin: 0; text-wrap: balance; font-weight: 600; }
+h1 { font-size: 20px; letter-spacing: -0.01em; }
+.eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 500; }
+.topbar { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; padding-block: 10px 14px; border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+.topbar .grow { flex: 1 1 260px; min-width: 0; }
+select, button { font: inherit; color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
+button { cursor: pointer; }
+button:focus-visible, select:focus-visible, .step:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toggle { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+.toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 18px; font-variant-numeric: tabular-nums; color: var(--muted); }
+.stats b { color: var(--fg); font-weight: 600; }
+
+.grid { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 20px; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+
+/* steps rail */
+.rail { min-width: 0; }
+.rail h2 { font-size: 13px; margin-bottom: 8px; }
+.steps { display: flex; flex-direction: column; gap: 0; border-left: 2px solid var(--line); margin-left: 8px; }
+.step { position: relative; padding: 8px 10px 8px 18px; cursor: pointer; border: 0; background: none; text-align: left; width: 100%; color: var(--fg); border-radius: 0 6px 6px 0; }
+.step::before { content: ""; position: absolute; left: -7px; top: 13px; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--line); }
+.step:hover { background: var(--surface-2); }
+.step.active { background: var(--accent-soft); }
+.step.active::before { border-color: var(--accent); background: var(--accent); }
+.step .code { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+.step .date { font-family: var(--font-mono); font-size: 12px; }
+.step .act { font-size: 13px; margin-top: 2px; }
+.step.all { margin-bottom: 6px; font-weight: 500; }
+.absent { margin-top: 18px; padding: 12px; border: 1px dashed var(--absent); border-radius: 8px; background: var(--absent-soft); }
+.absent h3 { font-size: 13px; color: var(--absent); margin-bottom: 4px; }
+.absent p { margin: 4px 0; font-size: 13px; }
+
+/* question panel */
+.question { padding: 12px 14px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); margin-bottom: 14px; }
+.question h2 { font-size: 14px; margin-bottom: 6px; }
+.question dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 0; font-size: 13px; }
+.question dt { color: var(--muted); }
+.question dd { margin: 0; min-width: 0; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { display: inline-block; font-family: var(--font-mono); font-size: 11.5px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface-2); }
+.pill.use { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); }
+.pill.refuse { background: var(--trap-soft); border-color: var(--trap); color: var(--trap); }
+
+/* documents */
+.docs { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+@media (max-width: 420px) { .docs { grid-template-columns: 1fr; } }
+.doc { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 14px 16px 12px; min-width: 0; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 1px 0 var(--line); }
+.doc.is-trap.labels { border-color: var(--trap); }
+.doc.is-real.labels { border-color: var(--ok); }
+.doc.dim { opacity: 0.45; }
+.doc .head { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.doc .id { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.badge { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; white-space: nowrap; }
+.badge.real { background: var(--ok-soft); color: var(--ok); }
+.badge.trap { background: var(--trap-soft); color: var(--trap); }
+.badge.use { background: var(--ok-soft); color: var(--ok); }
+.badge.refuse { background: var(--trap-soft); color: var(--trap); }
+.doc h3 { font-family: var(--font-doc); font-size: 15px; font-weight: 500; line-height: 1.3; }
+.doc .meta { font-size: 12px; color: var(--muted); display: grid; grid-template-columns: max-content 1fr; gap: 1px 10px; }
+.doc .meta span:nth-child(odd) { text-transform: uppercase; letter-spacing: 0.06em; font-size: 10.5px; }
+.doc .body { font-family: var(--font-doc); font-size: 13.5px; line-height: 1.55; white-space: pre-wrap; max-height: 9.5em; overflow: hidden; position: relative; }
+.doc .body.open { max-height: none; }
+.doc .body:not(.open)::after { content: ""; position: absolute; inset: auto 0 0 0; height: 2.5em; background: linear-gradient(transparent, var(--surface)); }
+.doc .more { align-self: flex-start; font-size: 12px; padding: 3px 8px; }
+.doc .truth { font-size: 12.5px; padding: 8px 10px; border-radius: 4px; background: var(--surface-2); }
+.doc .truth b { font-weight: 600; }
+.doc .truth .src { font-style: italic; color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--muted); margin: 6px 0 14px; }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.legend .l-real::before { background: var(--ok); } .legend .l-trap::before { background: var(--trap); } .legend .l-absent::before { background: var(--absent); }
+.empty { color: var(--muted); padding: 24px; text-align: center; }
+@media (prefers-reduced-motion: no-preference) { .doc .body { transition: max-height 0.2s ease; } }
+</style>
+
+<div class="wrap">
+  <div class="topbar">
+    <div class="grow">
+      <div class="eyebrow">Swiss Ruling Eval · dossiers générés</div>
+      <h1 id="title">Dossiers pièges</h1>
+    </div>
+    <label class="eyebrow" for="case">Cas
+      <select id="case"></select>
+    </label>
+    <label class="toggle"><input type="checkbox" id="labels" checked> Montrer les étiquettes (réel / piège)</label>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <div class="grid">
+    <aside class="rail">
+      <h2>Procédure</h2>
+      <div class="steps" id="steps"></div>
+      <div class="absent" id="absent"></div>
+    </aside>
+    <main style="min-width:0">
+      <div class="question" id="question" hidden></div>
+      <div class="legend"><span class="l-real">document réel</span><span class="l-trap">piège</span><span class="l-absent">document manquant</span><span>Clique une étape pour voir ce que l'agent voit à ce moment-là, et ce qu'il devrait répondre.</span></div>
+      <div class="docs" id="docs"></div>
+    </main>
+  </div>
+</div>
+
+<script id="data" type="application/json">/*__DATA__*/</script>
+<script>
+(function () {
+  const DATA = JSON.parse(document.getElementById('data').textContent);
+  const cases = Object.keys(DATA).sort();
+  const sel = document.getElementById('case');
+  const labelsBox = document.getElementById('labels');
+  const TRAP = { T1_future: 'T1 futur', T2_superseded: 'T2 périmé', T3_unsent: 'T3 non envoyé', T4_wrong_person: 'T4 mauvaise personne', T5_wrong_law_version: 'T5 mauvaise version de loi', T6_lookalike: 'T6 hors sujet' };
+  const DOMAIN = { IV: 'AI (invalidité)', UV: 'AA (accidents)', KV: 'LAMal (maladie)', BVG: 'LPP (prévoyance)', AHV_EL: 'AVS / PC', PRIV_VVG: 'LCA (assurance privée)' };
+  const OUT = { approval: 'recours admis', partial_approval: 'recours partiellement admis', dismissal: 'recours rejeté' };
+  let state = { caseId: cases[0], step: null, open: new Set() };
+  try { const s = localStorage.getItem('dossier-viewer-case'); if (s && DATA[s]) state.caseId = s; } catch (e) {}
+
+  cases.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = `${c} · ${DATA[c].language.toUpperCase()} · ${DOMAIN[DATA[c].domain] || DATA[c].domain}`; sel.appendChild(o); });
+  sel.value = state.caseId;
+  sel.addEventListener('change', () => { state.caseId = sel.value; state.step = null; state.open = new Set(); try { localStorage.setItem('dossier-viewer-case', sel.value); } catch (e) {} render(); });
+  labelsBox.addEventListener('change', render);
+
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+
+  function render() {
+    const d = DATA[state.caseId];
+    const labels = labelsBox.checked;
+    const docs = d.documents;
+    const real = docs.filter(x => x.ground_truth.status === 'real');
+    document.getElementById('title').textContent = `${d.case_id} · ${DOMAIN[d.domain] || d.domain}`;
+    document.getElementById('stats').innerHTML =
+      `<span><b>${real.length}</b> documents réels</span><span><b>${docs.length - real.length}</b> pièges</span><span><b>${d.steps.length}</b> étapes</span><span><b>${d.questions.length}</b> questions</span>` +
+      (labels ? `<span>issue réelle : <b>${OUT[d.outcome] || d.outcome}</b></span>` : '');
+
+    // steps rail
+    const stepsEl = document.getElementById('steps');
+    stepsEl.innerHTML = '';
+    const all = document.createElement('button'); all.className = 'step all' + (state.step === null ? ' active' : ''); all.innerHTML = '<span class="act">Tout le dossier</span>';
+    all.addEventListener('click', () => { state.step = null; render(); });
+    stepsEl.appendChild(all);
+    d.steps.forEach((s, i) => {
+      const b = document.createElement('button'); b.className = 'step' + (state.step === i ? ' active' : '');
+      const q = d.questions.find(x => x.step_index === i);
+      b.innerHTML = `<div><span class="code">${esc(s.code)}</span> <span class="date">${esc(s.date || '—')}</span>${q ? '' : ' <span class="code">(pas de question)</span>'}</div><div class="act">${esc(s.act)}</div>`;
+      b.addEventListener('click', () => { state.step = i; render(); });
+      stepsEl.appendChild(b);
+    });
+
+    // absent document
+    const a = d.absent_document || {};
+    document.getElementById('absent').innerHTML = labels
+      ? `<h3>Document manquant (T7)</h3><p><b>${esc(a.type || '')}</b> · nécessaire à ${esc(a.needed_at_step || '')}</p><p>${esc(a.description || '')}</p><p class="src">${esc(a.why_decisive || '')}</p>`
+      : `<h3>Document manquant (T7)</h3><p>Masqué. L'agent doit le nommer lui-même.</p>`;
+
+    // question panel + visible docs
+    const qEl = document.getElementById('question');
+    let visible = docs, gold = null;
+    if (state.step !== null) {
+      const q = d.questions.find(x => x.step_index === state.step);
+      if (q) {
+        visible = docs.filter(x => q.visible_doc_ids.includes(x.doc_id));
+        gold = q.gold;
+        qEl.hidden = false;
+        qEl.innerHTML = `<h2>Question après ${esc(q.after_step)} : que fait-on maintenant ?</h2>` + (labels
+          ? `<dl><dt>Prochaine action</dt><dd>${esc(gold.next_action)}</dd><dt>Délai</dt><dd>${esc(gold.deadline_rule || '—')}</dd>
+             <dt>À utiliser</dt><dd class="pills">${gold.use_documents.map(id => `<span class="pill use">${id}</span>`).join('') || '—'}</dd>
+             <dt>À écarter</dt><dd class="pills">${gold.refuse_documents.map(r => `<span class="pill refuse">${r.doc_id} · ${esc(TRAP[r.trap_type] || r.trap_type)}</span>`).join('') || '—'}</dd>
+             <dt>Manquant</dt><dd>${gold.missing_document ? esc(gold.missing_document.type + ' : ' + gold.missing_document.description) : 'rien d’attendu à cette étape'}</dd></dl>`
+          : `<p>L'agent voit les ${visible.length} documents ci-dessous et doit dire : prochaine action et délai, documents à utiliser et à écarter, document manquant, base légale.</p>`);
+      } else { qEl.hidden = false; qEl.innerHTML = `<h2>Pas de question à cette étape</h2><p>Moins de deux documents sur la table, ou dernière étape.</p>`; visible = []; }
+    } else { qEl.hidden = true; }
+
+    const docsEl = document.getElementById('docs');
+    docsEl.innerHTML = '';
+    if (!visible.length) { docsEl.innerHTML = '<div class="empty">Aucun document visible.</div>'; return; }
+    visible.forEach(x => {
+      const g = x.ground_truth, isTrap = g.status === 'trap';
+      const card = document.createElement('article');
+      card.className = 'doc ' + (isTrap ? 'is-trap' : 'is-real') + (labels ? ' labels' : '');
+      let badge = '';
+      if (labels) {
+        if (gold) {
+          if (gold.use_documents.includes(x.doc_id)) badge = '<span class="badge use">à utiliser</span>';
+          else if (isTrap) badge = `<span class="badge refuse">${esc(TRAP[g.trap_type] || g.trap_type)}</span>`;
+          else { badge = '<span class="badge real">réel · pas utile ici</span>'; card.classList.add('dim'); }
+        } else badge = isTrap ? `<span class="badge trap">${esc(TRAP[g.trap_type] || g.trap_type)}</span>` : '<span class="badge real">réel</span>';
+      }
+      const isOpen = state.open.has(x.doc_id);
+      card.innerHTML = `<div class="head"><span class="id">${esc(x.doc_id)} · ${esc(x.type)}</span>${badge}</div>
+        <h3>${esc(x.title)}</h3>
+        <div class="meta"><span>de</span><span>${esc(x.author)}</span><span>à</span><span>${esc(x.recipient)}</span><span>date</span><span>${esc(x.date)}</span><span>réf.</span><span>${esc(x.reference)}</span></div>
+        <div class="body${isOpen ? ' open' : ''}">${esc(x.body)}</div>
+        <button class="more" type="button">${isOpen ? 'Replier' : 'Lire tout'}</button>` +
+        (labels ? `<div class="truth">${isTrap ? `<b>Pourquoi c'est un piège :</b> ${esc(g.trap_note || '')}` : `<b>Créé à</b> ${esc(g.step_created || '')} · <b>utile à</b> ${esc((g.use_at_steps || []).join(', ') || '—')}${g.source_sentence ? `<div class="src">« ${esc(g.source_sentence)} »</div>` : ''}`}</div>` : '');
+      card.querySelector('.more').addEventListener('click', () => { if (state.open.has(x.doc_id)) state.open.delete(x.doc_id); else state.open.add(x.doc_id); render(); });
+      docsEl.appendChild(card);
+    });
+  }
+  render();
+})();
+</script>
