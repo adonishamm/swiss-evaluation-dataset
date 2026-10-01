@@ -1,0 +1,13 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+
+# downloaded data and intermediate artefacts (large, re-downloadable)
+data/
+results/*
+!results/summary.csv
+
+# local tooling
+.env
+*.log
