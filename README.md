@@ -206,13 +206,16 @@ swiss-evaluation-dataset/
 │   ├── 04_assemble_testset.py     # -> testset/cases_100.jsonl
 │   ├── 05_split_agent_input.py    # outcome task files -> data/work/agent_input_100.jsonl, gold_100.jsonl
 │   ├── 06_procedural_history.py   # dated procedural acts -> data/procedural/
-│   ├── 07_generate_dossier.py     # -> testset/dossiers/<case>.json (Claude CLI, headless)
-│   └── 08_step_questions.py       # -> testset/questions/<case>.jsonl
+│   ├── 07_generate_dossier.py     # dossier plan + short documents -> testset/dossiers/<case>.json (Claude CLI, headless)
+│   ├── 07b_expand_documents.py    # rewrites each document at realistic length, one call per document
+│   ├── 08_step_questions.py       # -> testset/questions/<case>.jsonl
+│   └── 09_build_viewer.py         # -> testset/viewer.html (single-file viewer of dossiers and questions)
 ├── testset/                       # the deliverable, see testset/README.md
 │   ├── README.md
 │   ├── cases_100.jsonl            # the 100 rulings: facts, considerations, dispositive, citations
 │   ├── dossiers/<case>.json       # generated documents + labelled traps (5 pilots so far)
-│   └── questions/<case>.jsonl     # per-step agent prompt + gold (5 pilots so far)
+│   ├── questions/<case>.jsonl     # per-step agent prompt + gold (5 pilots so far)
+│   └── viewer.html                # open in a browser: steps, documents, traps, per-step view
 ├── data/                          # gitignored, regenerable
 │   ├── work/                      # candidate lists, intermediate tables, outcome-task files
 │   ├── raw/ parsed/ procedural/   # downloaded and parsed rulings
@@ -226,7 +229,8 @@ swiss-evaluation-dataset/
 |---|---|---|
 | done | Index, sampler, fetcher, parser | 100 cases fetched and parsed, 100 % section split, label cross-check run |
 | done (pilot) | Dossier generator and step questions on 5 cases | 5 dossiers pass the automatic checks and the leak scan; 6 to 12 step questions per case |
-| next | Dossiers for all 100, reviewer pass | `07 --all` run (about 25 USD, 3 hours); a jurist checks the real documents and refines the absent document from the considerations |
+| done (pilot) | Second pass for realistic length on 1 case | median 885 words per document, judgment 2,900 words, no leak |
+| next | Dossiers for all 100, reviewer pass | `07 --all` then `07b` (about 200 USD, 7 hours); a jurist checks the real documents and refines the absent document from the considerations |
 | next | Validation and human review | law student has validated all points, 10-case blind check done, Italian labels corrected from dispositive |
 | then | Harness and baseline | fine-tuned model, Apertus and at least two frontier models run end to end, summary.csv produced, DE / FR cross-language runs |
 
@@ -250,7 +254,9 @@ Dossier generation uses the Claude Code CLI in headless mode with your login (no
 ```bash
 .venv/Scripts/python.exe scripts/07_generate_dossier.py --cases 8C_229/2024   # one case, about 2 minutes
 .venv/Scripts/python.exe scripts/07_generate_dossier.py --all                 # all 100
+.venv/Scripts/python.exe scripts/07b_expand_documents.py --cases 8C_229/2024   # realistic length, about 1.7 USD per case
 .venv/Scripts/python.exe scripts/08_step_questions.py
+.venv/Scripts/python.exe scripts/09_build_viewer.py
 ```
 
 ---

@@ -163,7 +163,17 @@ Three rules added after reading the first batch:
 
 The absent document chosen by the generator is reasonable but not always the one the ruling later made decisive (for 8C_229/2024 it picked "a current medical opinion on the adult diagnosis" where the court remanded for an intelligence assessment). That is expected: the generator never sees the considerations. The reviewer refines the absent document from the considerations in step 3 of the build plan.
 
-## 9. Open points
+## 9. Second pass: realistic length (1 Oct 2026)
+
+A reviewer found the first-pass documents too short and too easy: median 170 words, which is a placeholder, not a document. Cause: the whole dossier came from one call with a 120 to 350 word target.
+
+`07b_expand_documents.py` rewrites every document in its own call, with a template per type and word targets from Swiss practice: cantonal judgment 1,500 to 2,600, expert report 1,800 to 3,000, decision 700 to 1,300, appeal 900 to 1,600, home inquiry 700 to 1,200, letters and orders 300 to 700. Each call receives the facts and the whole dossier plan, so dates, amounts and birth dates stay consistent across documents; traps bury their giveaway in the text.
+
+Result on 8C_229/2024: 13 documents, median 885 words, judgment 2,903 words, no self-label, no leak, the wrong-person trap is a birth date one year off inside a 964-word decision. 88 seconds with 4 parallel calls, 1.66 USD. Full pipeline per case is therefore about 2 USD and 4 minutes; 100 cases about 200 USD.
+
+Still to add for hardness: contradictory evidence (two medical reports disagreeing on work capacity), noise documents (invoices, appointment letters) to bring dossiers to 20 to 25 pieces, and figures the agent must compute with (income comparison, overcompensation).
+
+## 10. Open points
 
 - How many steps to ask per case: all, or only the two or three where the real parties made a mistake. Proposal: all steps, but weight the decisive ones double.
 - Whether the agent gets the facts narrative at all, or only the dossier. Proposal: dossier only. The facts narrative is what the court wrote afterwards; a practitioner never has it.
